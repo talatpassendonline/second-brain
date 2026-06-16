@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Obsidian workspace (machine-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian plugin/theme binaries (re-installed via Community plugins)
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/themes/*/theme.css
+
+# Obsidian trash
+.trash/
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+credentials*
+
+# Claude Code per-machine local settings
+.claude/settings.local.json
+
+# Node
+node_modules/
+*.log
