@@ -2,7 +2,91 @@
   "release": {
     "channel": "stable"
   },
-  "sharedFolders": [],
+  "sharedFolders": [
+    {
+      "path": "Context",
+      "guid": "c12dd8ab-8464-4971-8dbd-75ae597bc87c",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Daily",
+      "guid": "217d8b40-7927-4867-bf22-ecded59b2035",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Goatly-Knowledge",
+      "guid": "ee55a3dd-6b2c-4d3e-a7b7-209b5d7eb6e3",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Intelligence",
+      "guid": "540e905c-affd-46b4-a003-608efe1ae108",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Projects",
+      "guid": "9604e268-5a72-4f32-92b8-110da17a1f06",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Resources",
+      "guid": "534bec93-be3a-41d8-8028-134226e1ed2d",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    },
+    {
+      "path": "Skills",
+      "guid": "8daa6c7c-c99e-49cc-b8c2-64b127475f96",
+      "relay": "d6692ac2-b97a-4181-9fdf-834ad36e6992",
+      "sync": {
+        "images": true,
+        "audio": true,
+        "videos": true,
+        "pdfs": true,
+        "otherTypes": false
+      }
+    }
+  ],
   "endpoints": {},
   "enableDocumentStatus": false,
   "enableNewLinkFormat": false,
@@ -27,5 +111,8 @@
   "enableDocumentServer": true,
   "enableMicrosoftLogin": true,
   "enableGitHubLogin": true,
-  "enableOIDCLogin": true
+  "enableOIDCLogin": true,
+  "login": {
+    "provider": "github"
+  }
 }

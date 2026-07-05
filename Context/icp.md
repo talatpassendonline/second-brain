@@ -1,10 +1,11 @@
 ---
 type: context
+status: active
 tags: [icp, avatar, customer]
 updated: 2026-06-17
 ---
 
-# ICP — De Versterker (P4)
+# ICP, De Versterker (P4)
 
 **Sceptische Nederlandse vrouwen, 50–70.** Primary avatar for all current bone-funnel work. Built from Talat's direct buyer observation + the full avatar research in `/Users/talat/Desktop/Goatly_kennis/prompts/avatar_p4_de_versterker_research.md`.
 
@@ -32,11 +33,11 @@ updated: 2026-06-17
 
 ## Core fear (the emotional engine)
 
-Haar **moeder had dezelfde klachten en is er uiteindelijk aan overleden** — terwijl die moeder "alles goed deed volgens de dokter". Bij haar wordt het ook steeds erger. Niks blijkt tot een oplossing.
+Haar **moeder had dezelfde klachten en is er uiteindelijk aan overleden**, terwijl die moeder "alles goed deed volgens de dokter". Bij haar wordt het ook steeds erger. Niks blijkt tot een oplossing.
 
 > Money quote (Talat's woorden): *"ze begint steeds meer op haar moeder te lijken."*
 
-This is the line. The fear of becoming the mother — physically and in outcome — is what makes the funnel work.
+This is the line. The fear of becoming the mother, physically and in outcome, is what makes the funnel work.
 
 ## History with the category
 
@@ -59,7 +60,7 @@ Overwegend **Solution-Aware** → moving toward **Product-Aware**.
 
 > *"In de ochtend wakker worden met een fijn gevoel, haar botten die minder pijn doen, minder stijf. Lekker weer kunnen tuinieren als vanouds."*
 
-Concreet, klein, herkenbaar. **Niet** "leef 20 jaar langer" — *"weer kunnen tuinieren"*.
+Concreet, klein, herkenbaar. **Niet** "leef 20 jaar langer", *"weer kunnen tuinieren"*.
 
 ## The trigger (what made her click)
 
@@ -71,7 +72,7 @@ Pijn wordt erger. Begint steeds meer op haar moeder te lijken. Ziet de ad → le
 
 → Funnel-implicatie: advertorial moet volledig zijn (ze lezen alles). CTA moet onmiddellijkheid bieden (in stock, snel verzonden, 90d-garantie als angst-remover).
 
-## What she'd say to a friend (haar woorden — gebruik in copy)
+## What she'd say to a friend (haar woorden, gebruik in copy)
 
 - "Ik krimp."
 - "Mijn moeder had het ook."
@@ -120,9 +121,9 @@ Komen uit `avatar_p4_de_versterker_research.md` §13. Deze vrouwen gebruiken ze 
 
 ## Cross-links
 
-- [[pain-points]] — every pain mapped to the offer answer.
-- [[brand]] — voice & positioning that lands with this avatar.
-- [[strategy]] — review-flow priority + the proof-gap.
+- [[pain-points]], every pain mapped to the offer answer.
+- [[brand]], voice & positioning that lands with this avatar.
+- [[strategy]], review-flow priority + the proof-gap.
 - Deep avatar research (verbatim quotes, 12 sections): `/Users/talat/Desktop/Goatly_kennis/prompts/avatar_p4_de_versterker_research.md`
 - Mass desires research: `/Users/talat/Desktop/Goatly_kennis/prompts/Prompt 1 - uitslag.md`
 - 7 angles for this avatar: `/Users/talat/Desktop/Goatly_kennis/prompts/prompt 6 avatar p4.md`

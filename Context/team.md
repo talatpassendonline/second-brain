@@ -1,10 +1,9 @@
 ---
 type: context
+status: active
 tags: [team, people]
 updated: 2026-06-17
 ---
-
-# Team
 
 Tiny by design. Two co-owners, one supplier, Claude as automation layer. No employees, no freelancers (yet).
 
@@ -30,7 +29,7 @@ Tiny by design. Two co-owners, one supplier, Claude as automation layer. No empl
 
 ## Suppliers / fulfilment
 
-- **Creatidrop** — supplier. (Role: fulfilment / drop-ship — confirm exact relationship in a future update.)
+- **Creatidrop**, supplier. (Role: fulfilment / drop-ship, confirm exact relationship in a future update.)
 
 ## Automation as a teammate
 
@@ -38,12 +37,12 @@ Customer support is **fully automated with Claude**. No human in the support loo
 
 ## Working agreements
 
-- **Decisions of substance** (creative direction, offer changes, budget shifts) → discuss with [[Morra]] before shipping.
+- **Decisions of substance** (creative direction, offer changes, budget shifts) → discuss with [[team|Morra]] before shipping.
 - **Day-to-day execution** (ad set tweaks, copy iterations, advertorial edits, support replies) → Talat ships, doesn't need approval.
 - **Vault as source-of-truth** → whatever lands here outranks chat history. If a decision was made in chat with Morra, log it in `Intelligence/decisions/` or the relevant project folder.
 
 ## Cross-links
 
-- [[me]] — Talat.
-- [[business]] — ownership snapshot.
-- [[infrastructure]] — tool stack (including the customer-support automation).
+- [[me]], Talat.
+- [[business]], ownership snapshot.
+- [[infrastructure]], tool stack (including the customer-support automation).

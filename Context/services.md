@@ -1,5 +1,6 @@
 ---
 type: context
+status: active
 tags: [services, offer, bundles]
 updated: 2026-06-17
 ---

@@ -1,7 +1,8 @@
 ---
 type: context
+status: active
 tags: [profile, identity]
-updated: 2026-06-17
+updated: 2026-07-06
 ---
 
 # About Me
@@ -10,7 +11,7 @@ updated: 2026-06-17
 
 - **Name:** Talat
 - **Age:** 23
-- **Role:** Co-owner of [[Goatly]]
+- **Role:** Co-owner of [[business|Goatly]]
 - **Location:** Hilversum, Netherlands
 - **Industry:** Direct-response e-commerce (supplements / bone health)
 - **Day job:** 5-shift factory rotation (nights/mornings rotate, no fixed window)
@@ -47,15 +48,15 @@ A hardworking man. Always works very hard and does what he thinks is the best th
 - **Learning style:** Eager to learn. Listen, then try. Prefer to work through it before knowing 100%. Learn by doing. Ask many questions (sometimes "dumb" ones, fine).
 - **Pattern (drain):** I do what's on my mind. If I don't finish it in that session, it vanishes. I rarely come back to it. This vault exists to catch those loops.
 - **Communication:** Direct, casual, Dutch mixed with English.
+- **Wil tegengas:** wees kritisch by default, geef je eigen kant van het verhaal, niet reflexmatig meegaan. Concedeer alleen als hij echt gelijk heeft. Hij wil een sparringpartner, geen ja-knikker.
 
-## Current State
+## Current State (juli 2026)
 
-- ~2 months into ecommerce (from zero).
-- Currently averaging €2,500–€3,500/day revenue.
-- Mid-June 2026: hit €50k/month MRR.
-- **June 2026 target: €200k.** Single biggest goal right now.
+- Gestart april 2026 (from zero); mid-juni €50k/month MRR, toen €2.500-3.500/dag.
+- **Junidoel was €200k**; uitkomst nog niet vastgelegd, zie [[strategy]] History.
+- **Nu: UK-launch is het hoofdwerk** ([[Goatly-UK]]): copy-roster live, freeze tot ~9 juli, PDP-CVR fixes open.
 - Customer support fully automated with Claude.
-- Learning VSL writing / production. All ad output so far is long native ad copy and BOF ads.
+- Learning VSL writing / production. Ad output: long native ad copy en BOF ads, eerste VSL (UK10) in productie.
 
 ## Unclosed Loops (the meta-problem)
 

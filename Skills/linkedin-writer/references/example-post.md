@@ -1,9 +1,9 @@
 ---
 type: skill-example
 skill: linkedin-writer
+status: active
+tags: [linkedin, example]
 ---
-
-# Example Post
 
 <!-- Paste a LinkedIn post you liked below. It can be your own or someone else's. -->
 

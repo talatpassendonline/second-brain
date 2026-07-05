@@ -4,13 +4,15 @@ This folder is the library for reusable content: frameworks, templates, prompts,
 
 | Subfolder | What goes here |
 |---|---|
-| `frameworks/` | Reusable frameworks and methodologies |
-| `templates/` | Content templates (HTML, markdown) |
-| `prompts/` | Saved prompts for recurring tasks |
-| `tools/` | Documentation on tools and platforms |
-| `swipe/` | Swipe files and inspiration |
-| `companies/` | Company research and profiles |
-| `archive/` | Completed or superseded resources |
+| `prompts/` | Saved prompts for recurring tasks (dtc-operator-persona, native-ad-copy-session-starter) |
+| `ad-copy/` | Ad-copy frameworks en leesregels (depth-not-area) |
+| `playbooks/` | Operationele playbooks (meta-ban-resilience) |
+| `research/` | Ebook + podcast drop zones met extracts en INDEXen (zie folder CLAUDE.md) |
+| `voices/` | Brand voice persona pages (Nadine Hermans, Goatly Nederland, Gezond Ouder Worden) |
+| `Finance/` | Financiele spreadsheets (xlsx) |
+| `Operator/` | Vault Operator agent state: `operator-prompt.md` (the spec), `Tasks.md` (rolling backlog), `Daily/{date}-daily.md` (per-run reports). Wired to the `goatly-vault-operator-daily` scheduled task. |
+
+Nieuwe categorieen (frameworks/, templates/, swipe/, archive/) alleen aanmaken bij eerste echte drop.
 
 ## Rules
 

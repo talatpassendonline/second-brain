@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Vault Optimizer Report . 2026-06-17 . Goatly Second Brain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --dark: #020309;
+    --bg: #FAF3E3;
+    --light-blue: #E5F5F9;
+    --green: #D2ECD0;
+    --red: #F3C1C0;
+    --orange: #FCD9B6;
+    --dark-yellow: #FDEEC4;
+    --paper: #FFFFFF;
+    --goatly-green: #2d5238;
+    --goatly-cream: #f5efe3;
+    --shadow: 8px 8px 0 var(--dark);
+    --shadow-sm: 4px 4px 0 var(--dark);
+    --border: 2px solid var(--dark);
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--dark); font-family: 'Montserrat', system-ui, sans-serif; font-size: 15px; line-height: 1.55; }
+  body { padding: 32px 24px 64px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+  h1 { font-size: 38px; line-height: 1.1; }
+  h2 { font-size: 22px; margin: 0 0 12px; }
+  h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 8px; opacity: 0.65; }
+  h4 { font-size: 17px; margin: 0 0 8px; }
+  code { background: var(--light-blue); padding: 2px 6px; border-radius: 4px; font-size: 13px; font-family: 'SF Mono', Menlo, monospace; border: 1px solid rgba(2,3,9,0.12); }
+
+  .header {
+    background: var(--paper);
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .header .eyebrow { font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.65; margin-bottom: 6px; }
+  .score-badge { background: var(--green); border: var(--border); border-radius: var(--radius); padding: 14px 22px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-align: center; min-width: 240px; box-shadow: var(--shadow-sm); }
+  .score-badge .label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7; display: block; }
+  .score-badge .value { font-size: 32px; line-height: 1; margin-top: 4px; }
+  .score-badge .delta { font-size: 14px; opacity: 0.8; margin-top: 6px; }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 28px; }
+  .stat { background: var(--paper); border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px 20px; }
+  .stat .num { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+  .stat.saved .num { color: #1f6f1a; }
+  .stat.fail .num { color: #a83232; }
+  .stat .sub { margin-top: 8px; font-size: 12px; opacity: 0.7; }
+
+  .card { background: var(--paper); border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 26px; margin-bottom: 24px; }
+  .arch-read { background: var(--dark-yellow); }
+  .arch-read p { margin: 0 0 12px; }
+  .arch-read p:last-child { margin-bottom: 0; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid rgba(2,3,9,0.12); vertical-align: top; }
+  th { font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.75; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .delta-pos { color: #1f6f1a; font-weight: 600; }
+  .delta-neg { color: #a83232; font-weight: 600; }
+  .delta-zero { opacity: 0.45; }
+
+  .pill { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; border: 1.5px solid var(--dark); }
+  .pill.fixed { background: var(--green); }
+  .pill.saved { background: var(--orange); }
+  .pill.declined { background: var(--dark-yellow); }
+  .pill.failed { background: var(--red); }
+
+  .framework { background: var(--paper); border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 26px; margin-bottom: 24px; }
+  .framework header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
+  .framework .why { background: var(--light-blue); border-left: 4px solid var(--dark); padding: 10px 14px; font-size: 13px; line-height: 1.5; margin: 12px 0 16px; border-radius: 4px; }
+  .finding { border: 1.5px solid rgba(2,3,9,0.16); border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+  .finding .meta { display: flex; align-items: center; gap: 10px; font-size: 12px; opacity: 0.7; margin-bottom: 4px; }
+  .finding .excerpt { font-family: 'SF Mono', Menlo, monospace; font-size: 12px; background: var(--light-blue); padding: 8px 10px; border-radius: 4px; margin: 6px 0; white-space: pre-wrap; }
+  .finding .reasoning { font-size: 13px; line-height: 1.55; margin: 6px 0; }
+  .finding .action { font-size: 13px; color: var(--goatly-green); font-weight: 600; margin-top: 4px; }
+
+  .footer { text-align: center; margin-top: 32px; font-size: 12px; opacity: 0.6; }
+  .clean { padding: 14px; text-align: center; font-size: 14px; opacity: 0.7; background: rgba(31,111,26,0.08); border-radius: 6px; }
+
+  @media (max-width: 720px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+  <div class="title-block">
+    <div class="eyebrow">Goatly Second Brain . Vault Optimizer</div>
+    <h1>Audit report</h1>
+    <div class="muted" style="margin-top:6px; font-size:13px; opacity:0.6;">24 markdown files . 6 folders . 2026-06-17 . os-mode: professional</div>
+  </div>
+  <div class="score-badge">
+    <span class="label">Score (F1-G7)</span>
+    <div class="value">68 &rarr; 91</div>
+    <div class="delta">+23 . "Bloat is hurting" &rarr; "Well-tuned"</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">24</div><div class="sub">Files audited</div></div>
+  <div class="stat saved"><div class="num">26</div><div class="sub">Fixes applied</div></div>
+  <div class="stat"><div class="num">10</div><div class="sub">Declined (by design)</div></div>
+  <div class="stat fail"><div class="num">1</div><div class="sub">Mechanical failures</div></div>
+</div>
+
+<div class="card arch-read">
+  <h2>Architectural read</h2>
+  <p>The vault is one day old, well-curated, and already has the right bones: nine Context files cover Goatly's business, brand, ICP, and stack; a Vault Operator is wired to a daily cron; Relay sync is healthy. The score climbed from 68 to 91 in this single run by clearing one specific, self-imposed maintenance debt: 100 em-dashes against the user's hard "no em-dashes" rule (CLAUDE.md Rule 14). They were everywhere, including in foundational files the Operator is sandboxed from touching (<code>brand.md</code>, <code>strategy.md</code>, <code>business.md</code>, root <code>CLAUDE.md</code>). The Optimizer does not have that sandbox, so this run was the right tool to fix them.</p>
+  <p>The one structural finding worth flagging: <code>Resources/Operator/</code> existed but was not documented in <code>Resources/CLAUDE.md</code>'s subfolder table, breaking the discoverability chain (root CLAUDE.md &rarr; Resources/ &rarr; Operator/). A future Claude session looking for operator state through the standard navigation path would not have known the folder existed. Now fixed in <code>Resources/CLAUDE.md</code>. No other architectural drift detected: routing table is accurate, every top-level folder has its CLAUDE.md, every file is reachable in 3 hops or fewer.</p>
+  <p>What remains unresolved by design: four dead wikilinks (<code>[[CalciumChew]]</code>, <code>[[Nadine Hermans]]</code>, <code>[[Gezond Ouder Worden]]</code>, <code>[[Goatly Nederland]]</code>) are intent-markers for entities that will eventually need pages (competitor profile, brand voice personas). Per Obsidian convention they stay dead until the user creates them. Four Skills/* scaffold files have no <code>status:</code> frontmatter because they are templates by design; the Operator's housekeeping queue will pick them up once they have real content.</p>
+</div>
+
+<div class="card">
+  <h2>Per-framework before &rarr; after</h2>
+  <table>
+    <thead>
+      <tr><th>Framework</th><th class="num">Findings</th><th class="num">Fail</th><th class="num">Warn</th><th class="num">Applied</th><th class="num">Declined</th><th class="num">Failed</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>F1 Anthropic CLAUDE.md</td><td class="num">0</td><td class="num delta-zero">0</td><td class="num delta-zero">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>F2 Karpathy Wiki</td><td class="num">7 &rarr; 4</td><td class="num delta-zero">0 &rarr; 0</td><td class="num delta-pos">7 &rarr; 4</td><td class="num delta-pos">3</td><td class="num">4</td><td class="num">0</td></tr>
+      <tr><td>F3 Caveman</td><td class="num">0</td><td class="num delta-zero">0</td><td class="num delta-zero">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>F4 Chroma Context Rot</td><td class="num">0</td><td class="num delta-zero">0</td><td class="num delta-zero">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>F5 Anthropic Memory</td><td class="num">2 &rarr; 2</td><td class="num delta-zero">0 &rarr; 0</td><td class="num delta-zero">2 &rarr; 2</td><td class="num">0</td><td class="num">2</td><td class="num">0</td></tr>
+      <tr><td>F6 Progressive Disclosure</td><td class="num">0</td><td class="num delta-zero">0</td><td class="num delta-zero">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>G7 Hygiene</td><td class="num delta-pos">27 &rarr; 5</td><td class="num delta-zero">0 &rarr; 0</td><td class="num delta-pos">27 &rarr; 5</td><td class="num delta-pos">22</td><td class="num">4</td><td class="num">1</td></tr>
+      <tr><td>F8 Reflection</td><td class="num">0</td><td class="num delta-zero">0</td><td class="num delta-zero">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>F9 Architecture</td><td class="num delta-pos">1 &rarr; 0</td><td class="num delta-zero">0 &rarr; 0</td><td class="num delta-pos">1 &rarr; 0</td><td class="num delta-pos">1</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr style="font-weight:700;background:rgba(2,3,9,0.04);"><td>Total</td><td class="num delta-pos">37 &rarr; 11</td><td class="num">0</td><td class="num delta-pos">37 &rarr; 11</td><td class="num delta-pos">26</td><td class="num">10</td><td class="num">1</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Per-role before &rarr; after</h2>
+  <table>
+    <thead>
+      <tr><th>Role</th><th class="num">Files</th><th class="num">Em-dashes</th><th class="num">Frontmatter status</th><th class="num">Dead wikilinks</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>identity (<code>Context/me.md</code>)</td><td class="num">1</td><td class="num delta-pos">5 &rarr; 0</td><td class="num delta-pos">missing &rarr; active</td><td class="num delta-pos">1 &rarr; 0</td></tr>
+      <tr><td>context (<code>Context/</code>)</td><td class="num">9</td><td class="num delta-pos">84 &rarr; 0</td><td class="num delta-pos">0/9 &rarr; 9/9</td><td class="num delta-pos">2 &rarr; 0</td></tr>
+      <tr><td>daily (<code>Daily/</code>)</td><td class="num">1</td><td class="num delta-zero">0 &rarr; 0</td><td class="num delta-pos">missing &rarr; active</td><td class="num delta-pos">1 &rarr; 0</td></tr>
+      <tr><td>resources (<code>Resources/</code>)</td><td class="num">5</td><td class="num delta-pos">12 &rarr; 1*</td><td class="num delta-pos">2/5 &rarr; 3/5</td><td class="num delta-pos">14 &rarr; 0</td></tr>
+      <tr><td>skills (<code>Skills/</code>)</td><td class="num">5</td><td class="num delta-pos">3 &rarr; 0</td><td class="num delta-zero">1/5 &rarr; 1/5 (templates)</td><td class="num delta-zero">0 &rarr; 0</td></tr>
+      <tr><td>folder-claude (6 CLAUDE.md)</td><td class="num">6</td><td class="num delta-pos">2 &rarr; 0</td><td class="num delta-zero">n/a (meta)</td><td class="num delta-zero">0 &rarr; 0</td></tr>
+      <tr style="font-weight:700;background:rgba(2,3,9,0.04);"><td>Total</td><td class="num">24</td><td class="num delta-pos">101 &rarr; 1*</td><td class="num delta-pos">8/24 &rarr; 13/24</td><td class="num delta-pos">18 &rarr; 0</td></tr>
+    </tbody>
+  </table>
+  <p class="muted" style="margin-top:12px;">* The remaining em-dash in <code>Resources/Operator/operator-prompt.md</code> sits inside inline code (<code>`Grep` pattern: `—`</code>) demonstrating the very character to search for. Mechanically protected; cannot remove without breaking the documentation. Flagged as failed with mechanical reason.</p>
+</div>
+
+<div class="framework">
+  <header><h2>G7 Hygiene . 22 fixes applied</h2><span class="pill fixed">PRIMARY DRIVER</span></header>
+  <div class="why">Project rules + practitioner field notes: em-dash discipline, frontmatter compliance, no H1 duplicating filename. Talat's CLAUDE.md Rule 14 forbids em-dashes anywhere; this run resolves it across the whole vault for the first time.</div>
+
+  <div class="finding">
+    <div class="meta"><strong>G7.1</strong> &middot; em-dashes &middot; 12 files &middot; <span class="pill fixed">FIXED 100/101</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> 101 em-dashes across 12 files violated CLAUDE.md Rule 14 ("NEVER use em dashes"). Distribution: <code>strategy.md</code> 22, <code>infrastructure.md</code> 19, <code>business.md</code> 13, <code>operator-prompt.md</code> 12, <code>brand.md</code> 11, <code>icp.md</code> 8, <code>pain-points.md</code> 7, <code>team.md</code> 4, root <code>CLAUDE.md</code> 2, plus 3 in Skills scaffolds. Substitution applied: <code> &mdash; </code> (space + em-dash + space) &rarr; <code>, </code> (comma + space). Comma chosen over period because most em-dashes followed entity names like "Talat , co-owner, operator" where a period would force unnatural capitalization on the next clause.</div>
+    <div class="action">Action: 100 substitutions applied across the 12 files in one sweep. 1 remaining (operator-prompt.md L140) sits inside inline code demonstrating the pattern itself, flagged as failed (mechanical, protected zone).</div>
+  </div>
+
+  <div class="finding">
+    <div class="meta"><strong>G7.2</strong> &middot; frontmatter status &middot; 15 files &middot; <span class="pill fixed">FIXED 11/15</span> <span class="pill declined">4 DECLINED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> CLAUDE.md frontmatter rule: "Always include <code>status:</code> + 2+ specific <code>tags:</code>". 15 files were missing status. The 9 Context files (canonical world model) got <code>status: active</code>. The Daily file got <code>status: active</code> + 2 tags (<code>onboarding</code>, <code>vault-setup</code>). The Operator daily report got <code>status: completed</code>. The 4 Skills scaffold files (<code>linkedin-writer/notes.md</code>, etc.) were declined: they are templates by design with HTML comment guidance and no real content yet; adding <code>status: active</code> to an unfilled scaffold would lie about its state.</div>
+    <div class="action">Action: 11 frontmatter additions applied with inferred values. 4 Skills templates declined as G7.2 false positives per the pass file's "templates by design" rule.</div>
+  </div>
+
+  <div class="finding">
+    <div class="meta"><strong>G7.3 / G7.4</strong> &middot; H1 duplicates / README hygiene &middot; <span class="pill fixed">CLEAN</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> No file's H1 duplicates its filename (root <code>CLAUDE.md</code> uses "Personal OS"; Context files have descriptive H1s like "About Me", "Brand, voice, positioning, look"). No Projects/{name}/README.md files exist yet to evaluate. Both checks pass.</div>
+  </div>
+</div>
+
+<div class="framework">
+  <header><h2>F2 Karpathy Wiki . 3 fixes applied, 4 declined</h2></header>
+  <div class="why">Karpathy's LLM Wiki: knowledge is compiled once and kept current. Lint catches dead links, orphans, contradictions, missing cross-references, undigested sources.</div>
+
+  <div class="finding">
+    <div class="meta"><strong>F2.2</strong> &middot; dead wikilinks (resolvable) &middot; <span class="pill fixed">3 REPOINTED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> Three dead wikilinks pointed at entities that already have canonical home files:
+      <ul>
+        <li><code>[[Talat]]</code> (14 occurrences across vault) &rarr; <code>[[me|Talat]]</code> because <code>Context/me.md</code> is the operator's bio.</li>
+        <li><code>[[Goatly]]</code> (7 occurrences) &rarr; <code>[[business|Goatly]]</code> because <code>Context/business.md</code> IS the Goatly snapshot (its H1 is literally "# Goatly").</li>
+        <li><code>[[Morra]]</code> (1 occurrence in <code>team.md</code>) &rarr; <code>[[team|Morra]]</code> because <code>Context/team.md</code> describes Morra as co-owner/advisor.</li>
+      </ul>
+      All three use display-alias syntax so the rendered text stays "Talat", "Goatly", "Morra" while the link resolves.</div>
+    <div class="action">Action: 22 wikilink repoints applied across 9 files via parallel Edit calls.</div>
+  </div>
+
+  <div class="finding">
+    <div class="meta"><strong>F2.2</strong> &middot; dead wikilinks (no target) &middot; <span class="pill declined">4 DECLINED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> Four wikilinks reference entities that don't have pages yet and don't have an obvious existing repoint target. They are kept as Obsidian intent-links (clicking them creates the file when the user is ready):
+      <ul>
+        <li><code>[[CalciumChew]]</code> &mdash; competitor brand. Per <code>Intelligence/CLAUDE.md</code> routing this would become <code>Intelligence/competitors/CalciumChew.md</code> when the user does a competitor write-up. Not auto-created (no source content to seed it).</li>
+        <li><code>[[Nadine Hermans]]</code>, <code>[[Gezond Ouder Worden]]</code>, <code>[[Goatly Nederland]]</code> &mdash; three brand voice personas. Mentioned in <code>brand.md</code>. Each could become a <code>Resources/voices/{name}.md</code> file but the brand doc already captures their voice well; standalone files would split the content unnecessarily.</li>
+      </ul></div>
+    <div class="action">Action: 4 dead intent-links preserved by design. User can promote any of them to real files when ready.</div>
+  </div>
+
+  <div class="finding">
+    <div class="meta"><strong>F2.4</strong> &middot; plain-text entity references &middot; <span class="pill saved">QUEUED IN OPERATOR</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> 20+ plain "Talat" occurrences, 7+ "Morra", 16+ "Goatly" (excluding URLs and code paths) sit in vault prose where CLAUDE.md Rule 3 wants them wikilinked. The Optimizer cannot bulk-apply these mechanically because <code>replace_all</code> would corrupt headings (e.g. <code># Goatly</code> in business.md should stay plain), frontmatter values, and inline code paths like <code>/Goatly_kennis/</code>. The Operator's housekeeping queue already lists plain-text entity refs as a rotating target (see <code>Resources/Operator/Tasks.md</code> &rarr; Housekeeping); subsequent operator runs will convert them per file with judgment.</div>
+    <div class="action">Action: routed to Operator's rotating housekeeping queue rather than bulk-replaced.</div>
+  </div>
+</div>
+
+<div class="framework">
+  <header><h2>F9 Architecture &amp; Discoverability . 1 fix applied</h2></header>
+  <div class="why">Walk the path co-worker Claude actually takes (root CLAUDE.md &rarr; folder CLAUDE.md &rarr; file). Verify routing entries match folder reality, every folder has an up-to-date index, every file is reachable in 3 hops or fewer.</div>
+
+  <div class="finding">
+    <div class="meta"><strong>F9.3</strong> &middot; discoverability gap &middot; <code>Resources/Operator/</code> &middot; <span class="pill fixed">FIXED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> <code>Resources/CLAUDE.md</code> documented seven canonical subfolders (frameworks/, templates/, prompts/, tools/, swipe/, companies/, archive/) but not <code>Operator/</code>, even though that folder is where the daily Vault Operator's prompt, task list, and run reports live. A future Claude session looking for operator state through the standard navigation path would have hit the routing entry "Resources/ &mdash; Reusable content" and not realized the Operator's state lives there.</div>
+    <div class="action">Action: added one row to <code>Resources/CLAUDE.md</code>'s subfolder table documenting <code>Operator/</code>, with one-line description naming the three files and the scheduled task that drives it.</div>
+  </div>
+</div>
+
+<div class="framework">
+  <header><h2>F5 Anthropic Memory . 2 findings, both declined as legitimate</h2></header>
+  <div class="why">Per-file budget &lt;10KB recommended / &lt;100KB hard. The agent navigates by name; bad names hide files.</div>
+
+  <div class="finding">
+    <div class="meta"><strong>F5.1</strong> &middot; file size warn &middot; <code>Resources/Operator/operator-prompt.md</code> 17.6KB &middot; <span class="pill declined">DECLINED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> Over the 10KB soft budget but well under the 100KB hard ceiling. The file is a single-topic agent prompt (the Operator's behavior spec) read in full at the start of each scheduled run. Splitting would force the runtime to assemble pieces, which defeats the "one self-contained spec" design. The pass file's false-positive rule covers this: "single focused topic at length &rarr; flag with lower severity but leave."</div>
+    <div class="action">Action: declined. Will revisit if the prompt grows past 25KB / 6K tokens, which is the next attention-budget breakpoint.</div>
+  </div>
+
+  <div class="finding">
+    <div class="meta"><strong>F5.3</strong> &middot; ambiguous filename &middot; <code>Skills/linkedin-writer/notes.md</code> &middot; <span class="pill declined">DECLINED</span></div>
+    <div class="reasoning"><strong>Reasoning:</strong> The filename <code>notes.md</code> matches the F5.3 ambiguous-pattern regex, but in <code>Skills/{skill-name}/notes.md</code> the folder context is the name. Per <code>Skills/CLAUDE.md</code>'s structure rule, every skill uses <code>notes.md</code> / <code>strategy.md</code> as conventional filenames; renaming would break the skill-loading contract. Same applies to <code>Skills/newsletter-writer/strategy.md</code>.</div>
+    <div class="action">Action: declined. Skill convention overrides the F5.3 heuristic in this folder.</div>
+  </div>
+</div>
+
+<div class="framework">
+  <header><h2>F1, F3, F4, F6, F8 . 0 findings</h2><span class="pill fixed">CLEAN</span></header>
+  <div class="why">Brand-new, well-curated vault. F1 read 7 CLAUDE.md files (~80 candidates judged), no specificity / position / inflation / conflict issues. F3 read 12 instruction-layer files, no filler / hedging / preamble. F4 found no context-rot signals: root CLAUDE.md is ~1100 tokens (under 3K budget), no distractor pairs, daily file under 2K tokens. F6 found 0 SKILL.md files (skill scaffolds are reference material, not skills). F8's curated-layer synthesis found no contradictions, no merge candidates (icp.md and pain-points.md are deliberately differentiated), no stale entries (vault is one day old), no emergent themes.</div>
+  <div class="clean">All 5 frameworks returned zero findings. Re-run monthly once content accumulates.</div>
+</div>
+
+<div class="footer">
+  Generated 2026-06-17 . os-optimizer skill .
+  9 frameworks applied . 37 findings &rarr; 11 after fixes . 26 fixes applied, 10 declined by design, 1 mechanical failure (protected zone).<br>
+  Sidecar JSON: <code>Intelligence/decisions/2026-06-17-vault-audit-findings.json</code>
+</div>
+
+</div>
+</body>
+</html>

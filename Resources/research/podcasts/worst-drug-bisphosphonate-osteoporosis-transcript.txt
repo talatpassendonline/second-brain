@@ -1,0 +1,1549 @@
+## **Intro and summary**
+
+0:01  
+Dr Doug Lucas here retired orthopedic  
+0:04  
+surgeon and founder of optimal bone  
+0:05  
+health MD  
+0:07  
+if you've been diagnosed with  
+0:08  
+osteoporosis or even osteopenia your  
+0:11  
+doctor may have talked to you about  
+0:12  
+taking a drug in the drug class of the  
+0:14  
+bisphosphonase so these are drugs like  
+0:16  
+Fosamax Boniva reclast and these drugs  
+0:20  
+have a place now I find that these drugs  
+0:24  
+are often I think over prescribed but I  
+0:26  
+also find that there's a lot of fear  
+0:28  
+around these drugs and there is a time  
+0:30  
+and a place for each of these different  
+0:32  
+types of drugs so today I want to talk  
+0:34  
+about this specific class of drugs I'm  
+0:36  
+going to go through a little bit of the  
+0:37  
+research behind what makes these drugs  
+0:40  
+effective as tools and then I'm going to  
+0:42  
+talk about some of the fears some of the  
+0:45  
+risks the reason why people don't want  
+0:46  
+to take them and a lot of that's very  
+0:48  
+justifiable and then I'm going to go  
+0:50  
+through a couple of cases to help point  
+0:53  
+out a couple of different scenarios one  
+0:55  
+where a drug would be recommended and I  
+0:57  
+don't think it's necessarily the right  
+0:58  
+thing to do and then the other one where  
+1:01  
+a drug is recommended in the patient's  
+1:03  
+refusing but maybe they should  
+1:05  
+reconsider so stick around if this is is  
+1:07  
+pertinent to you your journey or anybody  
+1:10  
+that you know who is going through this  
+1:11  
+we're going to get into bisphosphonates  
+1:18  
+foreign
+
+## **Bisphosphonates**
+
+1:22  
+so I want to be very clear that I am not  
+1:24  
+anti-drug we do use drugs in our  
+1:26  
+practice but very rarely when we go  
+1:29  
+through our framework we find that by  
+1:31  
+the time we get to the end of the  
+1:32  
+framework where we would consider drugs  
+1:34  
+drugs just aren't needed anymore but  
+1:37  
+there are scenarios where they're needed  
+1:39  
+we do prescribe them on occasion I'm  
+1:41  
+just not really a big fan of  
+1:42  
+bisphosphonates and I'll talk to you  
+1:44  
+about why so bisphosphonates are a  
+1:47  
+specific class of drugs again they fit  
+1:49  
+into this group of drugs called  
+1:51  
+anti-resorptives meaning that they slow  
+1:53  
+down bone resorption and these drugs go  
+1:57  
+by names of Fosamax actinal Boniva  
+2:00  
+reclass the generic names would be  
+2:03  
+alendronate  
+2:05  
+reciprocic acid they come in both oral  
+2:08  
+and IV forms so the way that these drugs  
+2:11  
+work is that they bind to a part of the  
+2:14  
+bone called the hydroxyapatite now this  
+2:16  
+is in The Matrix of the bone these are  
+2:17  
+the proteins of the bone and when your  
+2:19  
+bone is naturally turning over the  
+2:21  
+osteoclasts will go along and they'll  
+2:23  
+Chomp up the bone and then the  
+2:25  
+osteoblast will come in and they'll lay  
+2:26  
+down new bone when the osteoclasts go  
+2:28  
+along and Chomp up the bone and somebody  
+2:30  
+who's been given a bisphosphonate it  
+2:33  
+absorbs that bisphosphonate drug which  
+2:35  
+is bound to the hydroxyapatite and then  
+2:37  
+it essentially poisons the osteoclast so  
+2:39  
+your osteoclast function will plummet  
+2:42  
+this is good if you are rapidly losing  
+2:45  
+bone in the osteoclasts are functioning  
+2:47  
+more quickly than they're supposed to or  
+2:49  
+that we want them to necessarily or if  
+2:51  
+there's an imbalance where osteoclasts  
+2:53  
+are doing a whole lot more than  
+2:54  
+osteoblasts and we want to bring out the  
+2:56  
+osteoblasts  
+2:58  
+if you look at the literature it is  
+3:00  
+pretty clear that it will and best  
+3:02  
+phosphonate will increase bone mineral  
+3:04  
+density by between five and ten percent  
+3:05  
+so that is good right they also will  
+3:09  
+make the drug companies that is big  
+3:11  
+claims as to the reduction in fracture  
+3:13  
+risk I want to dig into that reduction  
+3:15  
+in fracture risk because I think it's  
+3:16  
+really important that people understand  
+3:18  
+some of the numbers around this and this  
+3:21  
+gets a little bit into the weeds of  
+3:24  
+Statistics so just bear with me while I  
+3:26  
+explain this and then we'll get into  
+3:28  
+some of the more fun stuff in just a  
+3:29  
+second  
+3:30  
+okay so let's talk about fracture risk
+
+## **Fracture Risk**
+
+3:33  
+for a second so when we talk about a  
+3:35  
+drug having an impact on fracture risk  
+3:37  
+this is ultimately what we want to know  
+3:39  
+right bone mineral density changes are  
+3:41  
+are good we want to see that but  
+3:43  
+ultimately I want to know is this going  
+3:45  
+to prevent a fracture  
+3:46  
+there are two main ways that you can  
+3:48  
+talk about fracture risk reduction one  
+3:50  
+is called relative risk and the other  
+3:53  
+one is called absolute risk it's really  
+3:55  
+important that we understand the  
+3:56  
+difference because in the study that I'm  
+3:58  
+about to talk about on zolodronic acid  
+4:00  
+or reclast you can see a big difference  
+4:02  
+between the relative risk reduction of  
+4:04  
+70 percent  
+4:06  
+versus an absolute risk reduction of  
+4:08  
+around one percent so how can the same  
+4:11  
+drug have a wildly different array of  
+4:15  
+numbers of 70 percent versus one percent  
+4:17  
+of what seems like the same thing what  
+4:20  
+all comes down to what type of fracture  
+4:21  
+and the statistics around how you're  
+4:24  
+representing those data okay so first  
+4:26  
+let's talk about the different types of  
+4:28  
+fractures in these studies so in the  
+4:30  
+studies on drugs and usually most  
+4:33  
+interventions but specifically on drugs  
+4:35  
+you're going to find really three main  
+4:36  
+types of fractures that they're talking  
+4:38  
+about they're going to talk about hip  
+4:39  
+fracture which is very clear right this  
+4:41  
+is something that is clinically relevant  
+4:43  
+you know that it's happened and you can  
+4:45  
+see it on x-ray so there's not a lot of  
+4:47  
+ambiguity on whether or not somebody's  
+4:49  
+had a hip fracture and then there are  
+4:51  
+clinically relevant fractures and that's  
+4:53  
+kind of a vague group that I'm not going  
+4:55  
+to talk about and then there are what's  
+4:57  
+called morphometric vertebral fractures  
+4:59  
+so what the heck does that mean well  
+5:01  
+morphometric just means that the shape  
+5:03  
+the morphology the shape of that kind of  
+5:06  
+boxy vertebral body has changed so when  
+5:10  
+you look at an x-ray or potentially a CT  
+5:12  
+but this is usually done on x-ray you  
+5:14  
+can see the vertebral bodies will change  
+5:17  
+shape for one x-ray to another now  
+5:19  
+what's interesting is that that's not  
+5:21  
+always clinically relevant meaning that  
+5:22  
+people don't always know that that has  
+5:25  
+happened and I think there's is a lot of  
+5:27  
+ambiguity here because in Orthopedic  
+5:29  
+residency training you're training to be  
+5:31  
+an orthopedic surgeon you look at I  
+5:33  
+don't know how many the hundreds of  
+5:35  
+thousands of X-rays and one of the  
+5:37  
+things we're taught is if you look at an  
+5:39  
+x-ray long enough you'll see a fracture  
+5:41  
+because there's all kinds of little  
+5:42  
+lines we're looking at all these little  
+5:43  
+things and we're trying to find what's  
+5:45  
+causing this this patient symptoms so I  
+5:48  
+know that if you are doing a study and  
+5:50  
+you're looking for morphometric changes  
+5:52  
+to the vertebral body there's got to be  
+5:54  
+some discrepancy some Observer  
+5:57  
+challenges meaning that one person will  
+5:59  
+look at it and find one thing and  
+6:00  
+another person will look at it and find  
+6:01  
+another so I know that that's in there  
+6:03  
+and if you look at morphometric  
+6:05  
+fractures there always higher than  
+6:07  
+clinically relevant fractures so if you  
+6:09  
+were to design a study and you wanted to  
+6:11  
+see the biggest difference then you  
+6:13  
+would talk about morphometric fractures  
+6:14  
+so then let's get into the the fracture  
+6:17  
+risk so when we look at this study on  
+6:19  
+reclast we can see that they talk about  
+6:22  
+a 70 reduction in fracture risk they're  
+6:24  
+talking about that morphometric  
+6:26  
+vertebral fracture risk so in the  
+6:29  
+intervention group the people that took  
+6:30  
+the drug they had a 70 percent reduction  
+6:34  
+compared to the people that took the  
+6:36  
+placebo in fractures so now let's talk  
+6:40  
+about relative risk versus absolute risk  
+6:43  
+so I'm going to actually break this down  
+6:45  
+into a kind of a sample study this is  
+6:48  
+not a real study but this gets the point  
+6:49  
+across which is let's say that there  
+6:51  
+were a hundred people in the  
+6:53  
+intervention group so 100 people are  
+6:55  
+taking the drug and then there are a  
+6:57  
+hundred people who are taking a placebo  
+6:58  
+so let's say that in the intervention  
+7:01  
+group one person suffered a fracture one  
+7:04  
+and in the placebo group there were two  
+7:06  
+people that suffered a fracture so now  
+7:08  
+when we run the statistics and we talk  
+7:10  
+about a relative risk reduction there is  
+7:13  
+a difference of two fractures versus one  
+7:16  
+fracture and if you went from two to one  
+7:18  
+that's a 50 reduction in fracture risk  
+7:21  
+does that make sense so 50 reduction in  
+7:24  
+fracture risk that's the relative risk  
+7:26  
+but if we look at the numbers another  
+7:28  
+way and let's call it absolute risk so  
+7:31  
+the absolute risk of fracturing from one  
+7:34  
+group to another if you had one out of a  
+7:36  
+hundred in the intervention group and  
+7:39  
+two out of a hundred in the placebo  
+7:42  
+group so now we had what would be a two  
+7:46  
+out of 100 or a two percent fracture  
+7:48  
+risk right and then a one out of one  
+7:51  
+hundred or one percent fracture risk so  
+7:52  
+the difference between two and one is  
+7:56  
+one so now we have an absolute risk  
+7:58  
+difference of one percent so I know  
+8:01  
+that's challenging and I apologize for  
+8:03  
+having to bring that up but that's  
+8:05  
+important because when when you say you  
+8:07  
+had a 50 reduction in fracture risk that  
+8:09  
+doesn't necessarily mean it's not  
+8:11  
+clinically relevant even though it's a  
+8:12  
+very big number versus a one percent  
+8:15  
+reduction in fracture risk how many  
+8:17  
+people do you need to treat to actually  
+8:18  
+see that one reduction in fracture and  
+8:22  
+we were talking about something like a  
+8:23  
+non-clinically relevant fracture how  
+8:25  
+important is that actually so let's go  
+8:27  
+back to the reclass study so the reclass  
+8:30  
+study would then show that that a 70  
+8:31  
+reduction in fracture risk the absolute  
+8:34  
+reduction in that study was actually  
+8:36  
+seven percent so it goes from seventy  
+8:38  
+percent to seven percent now to be fair  
+8:40  
+seven percent is still clinically  
+8:42  
+relevant and um it's a pretty  
+8:44  
+significant number actually because it  
+8:46  
+you do not have to treat that many  
+8:47  
+people to get that reduction in fracture  
+8:49  
+risk however when you go to the  
+8:51  
+clinically relevant fractures and even  
+8:53  
+take it one more step to hip fractures  
+8:55  
+which are both more significant and  
+8:57  
+clinically relevant and identifiable the  
+9:00  
+relative risk reduction there was 41 not  
+9:03  
+70 percent and the absolute risk  
+9:05  
+reduction was actually 1.1 percent when  
+9:08  
+you look at the the data inside that  
+9:10  
+study so which is the right number to  
+9:13  
+represent to people well I think it's  
+9:15  
+ultimately all of it now this is  
+9:17  
+challenging because doctors don't have  
+9:18  
+that much time and ultimately they just  
+9:21  
+want you to to do the thing that's going  
+9:23  
+to help to prevent that fracture so  
+9:24  
+they're just going to hopefully  
+9:25  
+encourage you to take a drug that you  
+9:28  
+want to take get your buy-in and move  
+9:29  
+you on the challenge here is that I see  
+9:32  
+a lot of people talking about the 70  
+9:33  
+percent they don't talk about the one  
+9:35  
+percent and I think that's just not a  
+9:37  
+complete explanation of what's happening  
+9:39  
+with this drug
+
+## **Bisphosphonate Risk**
+
+9:41  
+so in that conversation about drugs we  
+9:43  
+also need to talk about risks now every  
+9:45  
+intervention has a risk I don't care if  
+9:47  
+it's calcium supplementation drugs  
+9:49  
+surgery everything has a risk so then  
+9:52  
+what risks are accompanied with  
+9:54  
+bisphosphonate drugs well it depends on  
+9:55  
+how you take them so the oral form if  
+9:58  
+you take the oral form there are risks  
+10:01  
+along the lines of side effects really  
+10:03  
+of nausea abdominal pain constipation  
+10:06  
+diarrhea esophageal irritation and even  
+10:08  
+ulcers and that's why the recommendation  
+10:10  
+exists that if you take the oral drug  
+10:12  
+you should stay upright for a certain  
+10:14  
+period of time afterward now both the IV  
+10:17  
+and oral forms have symptoms like  
+10:20  
+flu-like symptoms bone joint and muscle  
+10:22  
+pain low blood calcium which just makes  
+10:25  
+sense if you're messing with bone  
+10:26  
+metabolism and then there are the two  
+10:28  
+things that I see pop up in the Facebook  
+10:30  
+groups and online that people talk about  
+10:31  
+a whole lot and they should and these  
+10:33  
+are the severe risks of osteonecrosis of  
+10:36  
+the jaw and atypical femur fractures  
+10:39  
+all right now I'm going to talk about
+
+## **Atypical femoral fractures**
+
+10:41  
+atypical femur fractures first and just  
+10:43  
+help explain what that means so when a  
+10:46  
+femur usually breaks in the case of  
+10:48  
+osteoporosis generally we're talking  
+10:49  
+about a hip fracture we're talking about  
+10:51  
+a fracture at the top part of the femur  
+10:53  
+right by the hip it's either the femoral  
+10:55  
+neck which is where the the ball kind of  
+10:58  
+comes into the rest of the bone or the  
+11:00  
+the area called the trochanter or enter  
+11:02  
+trochanteric region which is a kind of a  
+11:04  
+weak spot in that Junction between the  
+11:07  
+two that's a typical femur fracture an  
+11:09  
+atypical femur fracture is one that  
+11:11  
+occurs just Downstream of that in What's  
+11:14  
+called the subtrochanteric region this  
+11:16  
+region when it breaks historically has  
+11:19  
+been from high trauma so a car accident  
+11:21  
+motorcycle accident fall off of a height  
+11:23  
+something like that because the bone is  
+11:26  
+extremely strong usually in that space  
+11:29  
+what we're seeing now because of the  
+11:32  
+bisphosphonates the drugs will impact  
+11:35  
+negatively bone metabolism and over time  
+11:38  
+bones will become more dense but they'll  
+11:40  
+become more brittle and then they break  
+11:42  
+in this area because of the stresses in  
+11:44  
+that area so those are called atypical  
+11:46  
+femur fractures the challenge with these  
+11:48  
+fractures is that they are harder to fix  
+11:50  
+they require kind of a different surgery  
+11:52  
+but then also when you've been on a  
+11:54  
+bisphosphonate long enough to have this  
+11:56  
+dense brittle bone your bones don't heal  
+11:58  
+very well and so we would have patients  
+12:01  
+where we would fix these things and we  
+12:02  
+would do everything we could to try to  
+12:04  
+get them to heal and sometimes they just  
+12:06  
+don't heal because the bone metabolism  
+12:09  
+has been so suppressed these can be a  
+12:11  
+challenge they can be corrected  
+12:12  
+typically we can get them to heal but  
+12:14  
+sometimes it's a challenge  
+12:15  
+and then there's osteonecrosis of the  
+12:17  
+jaw now osteonecrosis of the jaw is a  
+12:20  
+terrible complication of a drug and  
+12:22  
+essentially what it is is it has to do  
+12:24  
+with obviously your job you have the two  
+12:26  
+bones the top and the bottom and these  
+12:28  
+bones are turning over relatively  
+12:30  
+rapidly compared to other bones in your  
+12:32  
+body and it's because of the the impact  
+12:34  
+of the teeth and the stresses from  
+12:35  
+chewing and all this stuff and so uh if  
+12:38  
+you're on a bisphosphonate and you are  
+12:40  
+suppressing your bone metabolism then  
+12:42  
+that turnover is affected and impacted  
+12:44  
+and anytime you have dental work done  
+12:47  
+you're asking those bones to heal and  
+12:49  
+sometimes those bones won't heal and you  
+12:51  
+can develop an infection you can develop  
+12:53  
+what's called osteonecrosis or death of  
+12:55  
+the jaw  
+12:56  
+and that can be a really terrible thing  
+12:59  
+it can be almost impossible to get it to  
+13:01  
+heal bone grafting doesn't work I've  
+13:04  
+seen some terrible pictures and if  
+13:06  
+you're squeamish do not Google this  
+13:08  
+because it it can be really catastrophic  
+13:10  
+both osteonecrosis of the jaw and  
+13:12  
+atypical femur fractures are very rare  
+13:16  
+So when you're looking at the risk and  
+13:19  
+trying to compare to the benefits you  
+13:21  
+have to understand that these two very  
+13:22  
+scary things exist but they are very  
+13:25  
+rare so you're unlikely to have them but  
+13:28  
+it's not zero so some people do actually  
+13:31  
+end up with these things so then how do  
+13:34  
+we make a decision around these things
+
+## **How long can you be on this drug?**
+
+13:35  
+well there are other considerations to  
+13:37  
+make which is how long can you actually  
+13:39  
+be on this drug so the recommendations  
+13:41  
+are to avoid the atypical femur  
+13:43  
+fractures the recommendations are to  
+13:45  
+stop the drugs either after three to  
+13:47  
+five years depending on which type  
+13:49  
+you're on and you take what's called a  
+13:51  
+drug holiday and then people will either  
+13:54  
+be watched over time to see if their  
+13:56  
+bone loss continues which I think  
+13:58  
+inevitably it generally does or they're  
+14:00  
+put on another drug depending on their  
+14:02  
+scenario and that's one of the  
+14:04  
+challenges I see with drug therapy for  
+14:06  
+osteoporosis is simply that there isn't  
+14:08  
+a long-term Outlook you know and  
+14:11  
+depending on your position if you're in  
+14:13  
+your 50s versus 70s versus is 90s the  
+14:17  
+long-term Outlook needs to be considered  
+14:19  
+because a woman in her 50s who we're  
+14:21  
+going to talk about here in a second but  
+14:22  
+take a young woman in her 50s who just  
+14:25  
+went through menopause she has  
+14:27  
+significant osteoporosis she meets the  
+14:29  
+criteria to be treated with  
+14:31  
+Pharmaceuticals and her doctor  
+14:32  
+recommends a bisphosphonate  
+14:34  
+okay so let's say that she's 50 years  
+14:37  
+old in five years she'll be 55 and she  
+14:40  
+has to come off the bisphosphonate what  
+14:42  
+now  
+14:43  
+so I am less interested in your 10-year  
+14:46  
+risk as I am what's the plan over the  
+14:48  
+next 30 Years and that's why we take a  
+14:50  
+different approach altogether but what  
+14:52  
+else do we need to consider with the  
+14:54  
+bisphosphonate drugs well we also need  
+14:55  
+to understand that they don't seem to  
+14:57  
+work for everybody well why would that  
+14:59  
+be well it has to do with the fact that  
+15:01  
+the drug is doing a very specific thing  
+15:03  
+and if you're slowing down bone loss  
+15:06  
+then you have to have significant bone  
+15:08  
+loss or rapid bone loss for the drug to  
+15:10  
+be effective so some people that I see  
+15:12  
+when they come in they don't necessarily  
+15:14  
+have rapid bone loss they have a bone  
+15:16  
+building problem right so this comes  
+15:18  
+back to that the if you've listened to  
+15:19  
+me talk about the four r's recognize why  
+15:22  
+you're losing bone or why you can't  
+15:23  
+build bone is another way to say that  
+15:25  
+right and if you're not losing bone  
+15:27  
+rapidly this phosphane is not going to  
+15:29  
+help you and we see that in the  
+15:30  
+literature where it doesn't seem to help  
+15:32  
+everybody and I think that's probably  
+15:34  
+why  
+15:35  
+and then there's the last part of
+
+## **Bone Building**
+
+15:37  
+bisphosphonates in this equation for me  
+15:39  
+which is we know that we're going to  
+15:41  
+suppress bone turnover globally we've  
+15:44  
+talked about osteoclast being poisoned  
+15:46  
+and how that will bring down the  
+15:47  
+biomarker of CTX but what I also see in  
+15:51  
+the labs is that yes etx comes down but  
+15:53  
+P1 and P which is the bone building  
+15:56  
+biomarker P1 and P is osteoblast  
+15:59  
+function but that also gets suppressed  
+16:01  
+and I think this is why atypical femur  
+16:03  
+fractures happen is because we're just  
+16:05  
+suppressing metabolism of bone globally  
+16:08  
+and I think that over the long term that  
+16:10  
+is an issue  
+16:11  
+it will help to reduce fracture risk  
+16:13  
+early on but what's the long-term game  
+16:16  
+plan and I think that's really important  
+16:18  
+to understand  
+16:19  
+all right before we get to the cases  
+16:22  
+that I want to talk about  
+16:24  
+um if you could do me a favor if you are  
+16:25  
+enjoying this content please click the  
+16:28  
+like And subscribe buttons the reason  
+16:29  
+why I would love for you to do that is  
+16:31  
+that the more people do that the more  
+16:34  
+people are going to be recommended this  
+16:35  
+channel in the YouTube algorithm the  
+16:37  
+more people that are on their search for  
+16:39  
+bone health and osteoporosis Solutions  
+16:41  
+are going to find this content so please  
+16:43  
+help them out by helping me out and  
+16:45  
+click those buttons if you know anybody  
+16:47  
+that would benefit from this information  
+16:48  
+please share this with them if you want  
+16:51  
+to learn more tips and tricks about how  
+16:53  
+you can manage osteoporosis on your own  
+16:55  
+and a little bit about how we do it look  
+16:57  
+for the link for the free masterclass in
+
+## **Masterclass Registration Link**
+
+16:59  
+the description below if you want to  
+17:02  
+talk to one of our team members look for  
+17:03  
+the link up here this link will take you
+
+## **Program Details Link**
+
+17:05  
+to a form get you scheduled to talk to  
+17:07  
+one of our team members about our  
+17:09  
+programs that are available right now  
+17:11  
+so we talk about two different types of
+
+## **Example cases**
+
+17:13  
+cases so these are kind of  
+17:15  
+generalizations but I I put them  
+17:17  
+together because I want to demonstrate  
+17:20  
+two scenarios that I see very commonly  
+17:22  
+that I think both need to be discussed  
+17:24  
+openly so we're going to have two  
+17:27  
+different women they're both going to be  
+17:28  
+in their early 50s but you're going to  
+17:30  
+see that they're very different and the  
+17:32  
+reason why I bring this up is that I see  
+17:34  
+a lot on the the online groups and  
+17:37  
+discussions and comments of people  
+17:39  
+discouraging other people from doing  
+17:41  
+things or telling them that what they're  
+17:43  
+doing is wrong and I think it's really  
+17:45  
+important to understand that we are all  
+17:46  
+on our own journey and that your  
+17:49  
+situation may not be the same as this  
+17:51  
+other person in this Facebook group or  
+17:53  
+even your neighbor and that the  
+17:54  
+recommendations for them may not fit you  
+17:57  
+so let's go through these two cases so  
+17:59  
+the first one is let's call it a 52 year  
+18:01  
+old female she is recently  
+18:04  
+post-menopausal she got screened because  
+18:06  
+she has a family history of fracture  
+18:08  
+okay so she has a family history  
+18:10  
+fracture she got a dexa and let's say  
+18:12  
+her t-score is negative 2.7 in her hip  
+18:15  
+so if you put that into frax and  
+18:17  
+consider a couple of other things let's  
+18:19  
+say she is a drinker of alcohol and she  
+18:22  
+drinks three drinks a night for the most  
+18:24  
+part so you put that information in  
+18:26  
+there and her fracks will come out with  
+18:28  
+over three percent risk of a hip  
+18:30  
+fracture in the next 10 years so that  
+18:32  
+makes her a candidate for pharmaceutical  
+18:35  
+therapy at the age of 52\. so she goes to  
+18:38  
+her doctor and her doctor recommends  
+18:39  
+Abyss phosphonate a lot of primary care  
+18:42  
+doctors and Internal Medicine docs will  
+18:45  
+use an oral bisphosphate because it's  
+18:46  
+easy you can take Fosamax and it's  
+18:50  
+simple to do you just write the script  
+18:51  
+and you're on your way they also  
+18:53  
+recommend calcium and vitamin D as the  
+18:55  
+guidelines would State and send the  
+18:57  
+patient on her way with a repeat dexa in  
+18:59  
+one or two years  
+19:00  
+so that's patient number one patient  
+19:03  
+number two patient number two is let's  
+19:05  
+say another 52 year old female for sake  
+19:07  
+of Simplicity she is uh post menopausal  
+19:10  
+not because she went through menopause  
+19:12  
+naturally but because she had breast  
+19:15  
+cancer a few years ago she is on uh  
+19:17  
+drugs to help suppress estrogen and that  
+19:20  
+has caused her to go through menopause  
+19:22  
+potentially early and her t-score is  
+19:25  
+similar and even though if you input her  
+19:28  
+information into the frax calculator her  
+19:30  
+risk does not meet from ecological  
+19:32  
+management her doctor has recommended it  
+19:35  
+because she is likely going to rapidly  
+19:37  
+lose bone and let's even say that they  
+19:39  
+did bone turnover biomarkers and she is  
+19:42  
+rapidly losing bone let's say we know  
+19:44  
+that out of the gate now both of these  
+19:46  
+patients may be resistant to drug  
+19:48  
+therapy because the failure of drug  
+19:50  
+therapy can be up to 80 percent of  
+19:53  
+patients that just don't want to take  
+19:54  
+the drugs because of the risks and  
+19:56  
+because of the the stigma that goes  
+19:58  
+along with it so let's talk about each  
+20:00  
+one of these scenarios and how we would  
+20:02  
+manage them in our practice  
+20:04  
+okay so let's go back to Patient number  
+20:06  
+one so patient number one again she  
+20:08  
+comes to us she says hey um I've been  
+20:11  
+diagnosed with this thing I see you guys  
+20:12  
+do this thing talk me through how you  
+20:14  
+would do this we would say okay great  
+20:17  
+so you're 52 we would get a bunch of  
+20:20  
+information about her lifestyle so we  
+20:22  
+use our optimization pyramid so that  
+20:24  
+pyramid starts with the foundational  
+20:27  
+pillars of health so those would be  
+20:29  
+exercise sleep nutrition and spiritual  
+20:32  
+health and then we would ask about those  
+20:34  
+things and we would put goals into place  
+20:36  
+so we would talk about what kind of  
+20:38  
+exercise is good we have a whole regimen  
+20:40  
+for that we would talk about nutrition  
+20:41  
+how to be protein forward getting it  
+20:43  
+from the right sources getting nutrients  
+20:45  
+are you absorbing those things do you  
+20:47  
+need any functional testing so we would  
+20:48  
+just do all that and then the next step  
+20:50  
+would be targeted supplements based off  
+20:52  
+of biomarkers and potentially genetics  
+20:54  
+and then the next step would be a  
+20:56  
+conversation about hormone replacement  
+20:57  
+if she's a candidate and we would talk  
+20:59  
+about all the risks and benefits there  
+21:01  
+and then the next step would be peptides  
+21:04  
+if she's interested in doing peptides  
+21:05  
+and there's some interesting peptides in  
+21:07  
+this space for muscle health and being  
+21:10  
+anabolic and overall health in this  
+21:12  
+space and then the next step would be to  
+21:14  
+have a conversation about drugs now once  
+21:17  
+you get go through that whole framework  
+21:18  
+by the time we get to talking about  
+21:20  
+drugs we generally don't need them in  
+21:23  
+this case and the reason why is because  
+21:25  
+all those things that I just said are  
+21:27  
+very likely to improve her fracture risk  
+21:30  
+and we can take that that t-score and we  
+21:33  
+can turn it around and we can head in  
+21:35  
+the right direction we would test bone  
+21:37  
+health biomarkers to make sure that  
+21:39  
+they're headed in the right direction  
+21:40  
+and that fear and concern that she had  
+21:42  
+is immediately alleviated because she  
+21:45  
+has a solid plan and we know when we're  
+21:47  
+going to retest and we know that if we  
+21:51  
+fail which we almost never do but if we  
+21:54  
+fail then we still have the option to do  
+21:56  
+the drugs and here's the thing  
+21:58  
+we've recognized why she's losing bone  
+22:00  
+the first R and the four r's and we're  
+22:03  
+going to retest to make sure we're  
+22:04  
+heading the right direction so she's  
+22:05  
+already happier and we know that she is  
+22:08  
+at risk of fracture but is she likely to  
+22:10  
+break her hip today or tomorrow in the  
+22:13  
+next six months probably not now I can't  
+22:15  
+guarantee that but probably not so we  
+22:18  
+have time right so we can take our time  
+22:21  
+we can do this thing we can put it in  
+22:22  
+play and then we can see if we need them  
+22:24  
+and I can tell you after doing this for  
+22:26  
+hundreds of people that almost never is  
+22:29  
+that the case because there are so many  
+22:30  
+tools at our disposal to help improve  
+22:33  
+bone  
+22:34  
+okay so let's talk about patient number  
+22:35  
+two so now patient number two comes to  
+22:37  
+us and she says hey can you work with me  
+22:39  
+if I have breast cancer or if I'm  
+22:40  
+recovering from breast cancer and the  
+22:42  
+answer is of course because we have so  
+22:44  
+many tools that we can use so we bring  
+22:46  
+her in and we do that same thing right  
+22:48  
+so we talked about the four r's we talk  
+22:50  
+about the optimization pyramid we create  
+22:52  
+a program but here's a big difference  
+22:55  
+she's on a drug therapy that is going to  
+22:57  
+suppress estrogen and massively right so  
+23:00  
+we're not just like low it's just  
+23:02  
+non-existent and it suppresses  
+23:04  
+everything so it limits us to some  
+23:06  
+extent but we can still work on our gut  
+23:08  
+we can still work on our diet we can  
+23:09  
+still do all these things but we know  
+23:12  
+based off of lab testing indexa and  
+23:14  
+usually multiple dexas we we know her  
+23:17  
+trajectory which is that she is rapidly  
+23:19  
+losing bone and I'm not confident that  
+23:22  
+we can necessarily stop that with the  
+23:24  
+tools that we have available to us so  
+23:26  
+this is a scenario where drug therapy  
+23:28  
+specifically with the bisphosphonate may  
+23:30  
+actually be a good idea and this is  
+23:33  
+where we would have a conversation with  
+23:34  
+them and we would bring in their team  
+23:35  
+and we would all talk about it together  
+23:37  
+because it's important to to take every  
+23:41  
+aspect of it and come up with a plan  
+23:43  
+that is inclusive of all of the  
+23:46  
+different potential options so for her  
+23:48  
+we may say hey this is a not an  
+23:50  
+unreasonable time to actually do an  
+23:52  
+injection of re-class let's see if we  
+23:54  
+can get you through the other side of  
+23:57  
+your hormone therapy and then let's see  
+23:59  
+where you are you know and maybe we can  
+24:01  
+need to continue to build bone depending  
+24:02  
+on where your starting point is there  
+24:04  
+are lots of tools we can do but  
+24:06  
+sometimes medical scenarios whether it  
+24:08  
+be breast cancer treatment whether it be  
+24:11  
+chronic steroid treatment because of  
+24:13  
+autoimmune disease there are times where  
+24:15  
+you just have a hard time stopping bone  
+24:17  
+loss naturally and this is where drug  
+24:19  
+therapy can be really helpful so what I  
+24:22  
+fear is that when this person goes onto  
+24:24  
+a Facebook groups and sees the other  
+24:26  
+person who says that they're you know  
+24:28  
+wildly successful in improving their  
+24:30  
+bone health without drugs they don't  
+24:32  
+understand the difference between the  
+24:33  
+two cases and people don't talk about  
+24:35  
+all the all of the medical decision  
+24:38  
+making that goes into their case on  
+24:39  
+Facebook why would they and so it's  
+24:42  
+important that you understand your own  
+24:43  
+scenario and get really good information  
+24:45  
+because I see both sides of this which  
+24:48  
+is people that are on this phosphonates  
+24:49  
+unnecessarily in my opinion and then  
+24:52  
+people that are not taking them when  
+24:54  
+they should because of all of the stigma  
+24:57  
+and conversation around it on the  
+24:59  
+internet
+
+## **Doctor recommendations**
+
+25:00  
+okay so lastly I just want to mention  
+25:02  
+that  
+25:03  
+when doctors are recommending these  
+25:05  
+drugs based off of a calculated fracture  
+25:07  
+risk and you disagree with them that is  
+25:10  
+okay we are allowed to disagree with our  
+25:13  
+doctors but remember that they are  
+25:15  
+recommending these things for a reason  
+25:17  
+and it's not wrong it is what the  
+25:20  
+recommendations are it is what the  
+25:23  
+guidelines say to do so if you're going  
+25:25  
+to deviate away from that which is fine  
+25:27  
+I'm all for autonomy and being advocates  
+25:31  
+for your own health and having medical  
+25:33  
+Independence and decision making but you  
+25:35  
+have to create a solid plan and work  
+25:37  
+with somebody that can help you to  
+25:39  
+actually do that and don't just stick  
+25:40  
+your head in the sand make sure that  
+25:42  
+you're retesting to make sure that what  
+25:43  
+you're doing is actually working because  
+25:45  
+we know that the drugs will have a  
+25:47  
+specific impact I talked about all the  
+25:50  
+concerns I have about that but we know  
+25:52  
+that that impact is there and ultimately  
+25:53  
+everybody just wants to prevent the  
+25:55  
+fracture the fragility fractures that  
+25:57  
+will so profoundly impact your life so  
+26:00  
+make sure that you have a plan  
+26:01  
+regardless of which way you're going  
+26:04  
+all right so thank you for making it to
+
+## **Closing Summary**
+
+26:06  
+the end of this video on bisphosphonate  
+26:08  
+drugs I appreciate your time if you've  
+26:10  
+enjoyed this content and you found it  
+26:12  
+helpful please like And subscribe so  
+26:14  
+that more people are exposed to this  
+26:16  
+content if you want to sign up for  
+26:18  
+notifications we'll let you know when  
+26:19  
+something new is posted if you want to  
+26:21  
+learn more about other tips and tricks  
+26:23  
+you can do on your own look for the link
+
+## **Masterclass Registration Link**
+
+26:25  
+for our master class in the description  
+26:27  
+below and if you want to talk to our  
+26:29  
+team look for the link up here and you
+
+## **Program Details Link**
+
+26:31  
+can click on this and it'll take you to  
+26:33  
+a form that you can fill out and you can  
+26:35  
+get scheduled to chat with one of our  
+26:37  
+team members lastly I want to hear from  
+26:39  
+you I love all the comments the  
+26:41  
+questions the community that we're  
+26:43  
+building on YouTube so please reach out  
+26:45  
+in the description below there should be  
+26:47  
+a comment section leave a comment ask a  
+26:49  
+question we'll get to them as quickly as  
+26:51  
+we can thanks again for your time  
+26:59  
+thank you  
+27:01
+

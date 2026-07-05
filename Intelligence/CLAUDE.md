@@ -4,17 +4,14 @@ This folder holds organizational knowledge: meetings, competitors, market intel,
 
 | Category | Type | Route to |
 |---|---|---|
-| Meetings | Team standup / daily huddle | `meetings/team-standups/` |
 | Meetings | Client call | `meetings/client-calls/` |
-| Meetings | One-on-one | `meetings/one-on-ones/` |
-| Meetings | Board review | `meetings/board-reviews/` |
-| Meetings | All-hands | `meetings/all-hands/` |
-| Meetings | Cross-team sync | `meetings/cross-team/` |
+| Meetings | One-on-one (bijv. met Morra) | `meetings/one-on-ones/` |
+| Meetings | Standup | `meetings/team-standups/` |
 | Meetings | Anything else | `meetings/general/` |
 | Knowledge | Competitive insight | `competitors/{name}.md` |
-| Knowledge | Market insight | `market/{topic}.md` |
+| Knowledge | Market insight | `market/{topic}.md` (create on first drop) |
 | Knowledge | Decision with reasoning | `decisions/YYYY-MM-DD-{title}.md` |
-| Knowledge | Org-wide process / SOP | `processes/{name}.md` |
+| Knowledge | Process / SOP | `processes/{name}.md` (create on first drop) |
 | Archive | Completed / archived content | `archive/{name}/` |
 
 ## Decision Records
@@ -27,5 +24,4 @@ Use `> [!important]` for strategic implications and `> [!tip]` for opportunities
 
 ## Rules
 
-- Department-specific SOPs go to `Departments/{name}/sops/`, not `processes/`. `processes/` is for org-wide SOPs only.
 - Move completed projects, sunset competitors, and superseded research to `archive/`.

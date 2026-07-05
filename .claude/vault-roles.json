@@ -1,0 +1,32 @@
+{
+  "vault_root": "./",
+  "discovered_at": "2026-07-06T00:00:00Z",
+  "folder_index_convention": {
+    "name": "CLAUDE.md",
+    "confidence": "high",
+    "evidence": "9 folder-level CLAUDE.md files; alle top-level folders behalve nieuwe subfolders gedekt",
+    "coverage": 0.75
+  },
+  "roles": [
+    {"name": "identity",    "path": "./Context/me.md",            "kind": "file",   "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Operator (Talat) bio, working style, idea-vanishing drain"},
+    {"name": "context",     "path": "./Context/",                 "kind": "folder", "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Goatly canonical knowledge: business, strategy, brand, services, ICP, team, infrastructure"},
+    {"name": "projects",    "path": "./Projects/",                "kind": "folder", "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Goatly-UK (UK launch: research/copy/offer) + Lichtendirect (CRO specs)"},
+    {"name": "decisions",   "path": "./Intelligence/decisions/",  "kind": "folder", "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Dated decision records + audit artifacts"},
+    {"name": "daily",       "path": "./Daily/",                   "kind": "folder", "layer": "session", "is_standard": true,  "confidence": "high", "purpose": "Per-day operator journal entries"},
+    {"name": "meetings",    "path": "./Intelligence/meetings/",   "kind": "folder", "layer": "session", "is_standard": true,  "confidence": "high", "purpose": "Meeting notes by category. Currently empty."},
+    {"name": "resources",   "path": "./Resources/",               "kind": "folder", "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Reusable content: prompts, playbooks, ad-copy frameworks, research, voices, Operator state"},
+    {"name": "skills",      "path": "./Skills/",                  "kind": "folder", "layer": "curated", "is_standard": true,  "confidence": "high", "purpose": "Per-skill reference material (linkedin-writer, newsletter-writer)"},
+    {"name": "archive",     "path": "./Intelligence/archive/",    "kind": "folder", "layer": "archive", "is_standard": true,  "confidence": "high", "purpose": "Deactivated content. Currently empty."},
+    {"name": "transcripts", "path": "./Resources/research/podcasts/", "kind": "folder", "layer": "session", "is_standard": true, "confidence": "high", "purpose": "Raw podcast transcripts (lange filenames) naast hun extracts (slug filenames)"},
+    {"name": "competitors", "path": "./Intelligence/competitors/", "kind": "folder", "layer": "curated", "is_standard": false, "confidence": "high", "purpose": "Competitor profiles (Rynse, Eve Farm, CalciumChew, UK landscape)"},
+    {"name": "voices",      "path": "./Resources/voices/",        "kind": "folder", "layer": "curated", "is_standard": false, "confidence": "high", "purpose": "Brand voice personas (Nadine Hermans, Goatly Nederland, Gezond Ouder Worden)"},
+    {"name": "research",    "path": "./Resources/research/",      "kind": "folder", "layer": "curated", "is_standard": false, "confidence": "high", "purpose": "Ebook + podcast extracts met INDEX en verwerk-recipes"},
+    {"name": "operator-state", "path": "./Resources/Operator/",   "kind": "folder", "layer": "curated", "is_standard": false, "confidence": "high", "purpose": "Operator prompt, Tasks.md, operator daily reports"},
+    {"name": "finance",     "path": "./Resources/Finance/",       "kind": "folder", "layer": "curated", "is_standard": false, "confidence": "medium", "purpose": "Financiele spreadsheets (xlsx, geen markdown)"},
+    {"name": "commands",    "path": "./.claude/commands/",        "kind": "folder", "layer": "meta",    "is_standard": false, "confidence": "high", "purpose": "Slash commands (dtc, promote, watch)"},
+    {"name": "external-kennisbank", "path": "./Goatly-Knowledge", "kind": "folder", "layer": "meta",    "is_standard": false, "confidence": "high", "purpose": "Symlink naar /Users/talat/Desktop/Goatly_kennis (sister vault, canonical marketing bron)"}
+  ],
+  "missing_standard_roles": [],
+  "low_confidence_roles": [],
+  "unconfirmed_custom_roles": []
+}

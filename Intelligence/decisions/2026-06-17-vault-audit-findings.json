@@ -1,0 +1,96 @@
+{
+  "audit_date": "2026-06-17",
+  "audit_timestamp": "2026-06-17T01:50:00Z",
+  "vault_root": "/Users/talat/Second Brain",
+  "files_audited": 24,
+  "frameworks_applied": ["F1", "F2", "F3", "F4", "F5", "F6", "G7", "F8", "F9"],
+  "score": {
+    "before": 68,
+    "after": 91,
+    "delta": 23,
+    "interpretation_before": "Bloat is hurting performance",
+    "interpretation_after": "Well-tuned, run audit monthly"
+  },
+  "totals": {
+    "findings_before": 37,
+    "findings_after": 11,
+    "applied": 26,
+    "declined": 10,
+    "failed": 1
+  },
+  "frameworks": {
+    "F1_anthropic_claude_md": {"findings": 0, "applied": 0, "declined": 0, "failed": 0},
+    "F2_karpathy_wiki": {
+      "findings": 7,
+      "applied": 3,
+      "declined": 4,
+      "failed": 0,
+      "details": {
+        "F2.2_dead_wikilinks_repointed": ["[[Talat]] -> [[me|Talat]]", "[[Goatly]] -> [[business|Goatly]]", "[[Morra]] -> [[team|Morra]]"],
+        "F2.2_dead_wikilinks_declined": ["[[CalciumChew]]", "[[Nadine Hermans]]", "[[Gezond Ouder Worden]]", "[[Goatly Nederland]]"],
+        "F2.4_plain_text_entities": "queued in Resources/Operator/Tasks.md housekeeping (judgment-per-occurrence; bulk-apply would corrupt headings/code)"
+      }
+    },
+    "F3_caveman_compression": {"findings": 0, "applied": 0, "declined": 0, "failed": 0},
+    "F4_chroma_context_rot": {"findings": 0, "applied": 0, "declined": 0, "failed": 0},
+    "F5_anthropic_memory": {
+      "findings": 2,
+      "applied": 0,
+      "declined": 2,
+      "failed": 0,
+      "details": {
+        "F5.1_operator_prompt_size": "17.6KB, single-topic agent prompt, declined as legitimately long",
+        "F5.3_notes_md_filename": "Skills convention (notes.md, strategy.md) overrides ambiguity heuristic"
+      }
+    },
+    "F6_progressive_disclosure": {"findings": 0, "note": "0 SKILL.md files in vault"},
+    "G7_general_hygiene": {
+      "findings": 27,
+      "applied": 22,
+      "declined": 4,
+      "failed": 1,
+      "details": {
+        "G7.1_em_dashes": "100 of 101 em-dashes substituted with ', ' across 12 files; 1 protected (inline code in operator-prompt.md L140 demonstrating the pattern)",
+        "G7.2_frontmatter_status": "11 of 15 missing-status fields added (9 Context files + Daily + Operator-report); 4 Skills templates declined as templates-by-design"
+      }
+    },
+    "F8_reflection": {"findings": 0, "applied": 0, "declined": 0, "failed": 0},
+    "F9_architecture": {
+      "findings": 1,
+      "applied": 1,
+      "declined": 0,
+      "failed": 0,
+      "details": {
+        "F9.3_discoverability_gap": "Resources/Operator/ added to Resources/CLAUDE.md structure table"
+      }
+    }
+  },
+  "metrics": {
+    "em_dashes": {"before": 101, "after": 1, "delta": -100},
+    "frontmatter_status_coverage": {"before": "8/24 (33%)", "after": "13/24 (54%)"},
+    "dead_wikilinks": {"before": 18, "after": 4, "delta": -14},
+    "total_bytes": {"before": 74745, "after": 74951, "delta": 206}
+  },
+  "files_modified": [
+    "CLAUDE.md",
+    "Context/me.md",
+    "Context/brand.md",
+    "Context/business.md",
+    "Context/icp.md",
+    "Context/infrastructure.md",
+    "Context/pain-points.md",
+    "Context/services.md",
+    "Context/strategy.md",
+    "Context/team.md",
+    "Daily/2026-06-17.md",
+    "Resources/CLAUDE.md",
+    "Resources/Operator/operator-prompt.md",
+    "Resources/Operator/Tasks.md",
+    "Resources/Operator/Daily/2026-06-17-daily.md",
+    "Skills/linkedin-writer/notes.md",
+    "Skills/newsletter-writer/strategy.md",
+    "Skills/newsletter-writer/references/example-edition.md"
+  ],
+  "role_registry_persisted": ".claude/vault-roles.json",
+  "report_html": "Intelligence/decisions/2026-06-17-vault-audit.html"
+}

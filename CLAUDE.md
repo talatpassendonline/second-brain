@@ -32,15 +32,54 @@ Every piece of info has a home. No catch-all.
 | Project info | `Projects/{name}/` (see `Projects/CLAUDE.md`) |
 | Meetings, competitors, market, decisions | `Intelligence/` (see `Intelligence/CLAUDE.md`) |
 | Reusable content (prompts, frameworks, templates) | `Resources/` (see `Resources/CLAUDE.md`) |
+| Ebook PDFs + extracted research | `Resources/research/ebooks/` (drop PDFs, see folder `CLAUDE.md` for verwerk-recipe) |
+| Podcast audio / transcripts + extracts | `Resources/research/podcasts/` (drop `.mp3`/`.txt`/`.srt`, see folder `CLAUDE.md`) |
+| Articles, blog posts longreads | `Resources/research/articles/` (create on first drop) |
+| Brand voice persona pages | `Resources/voices/{Name}.md` |
+| Competitor profiles | `Intelligence/competitors/{name}.md` |
 | Skill-specific references | `Skills/{skill-name}/` (see `Skills/CLAUDE.md`) |
 | Daily journal | `Daily/YYYY-MM-DD.md` |
 | Rules for assistant behavior | Root `CLAUDE.md` (Rules section) |
 
 For specifics, read that folder's `CLAUDE.md`.
 
+## External Knowledge Bases
+
+This vault is the **operator layer**: identity, daily loops, strategy, projects, dagelijkse housekeeping. For **deep [[business|Goatly]] werk** (ad copy, VSL, brand voice canon, performance data, avatar research, advertorials, email flows) the canonical source is a sister vault on this same machine.
+
+**Goatly kennisbank** at `/Users/talat/Desktop/Goatly_kennis/`. In de vault-root staat de symlink `Goatly-Knowledge/` die daarheen wijst: schrijf ernaartoe alsof het een lokale folder is (Obsidian indexeert hem mee; `find` volgt hem niet).
+
+Read it when the task is:
+
+| Task | Read from `/Goatly_kennis/` |
+|---|---|
+| Ad copy draft, hook, advertorial, BOF | `claude.md` (canon) + `prompts/AD_COPY_SOP.md` + `brand/angle_bank.md` |
+| VSL script, structure, voice-over | `vsl/VSL_SOP.md` + `vsl/scripts/` + `playbooks/` (Fernando) |
+| Avatar deep dive, voice-of-customer | `prompts/avatar_p4_de_versterker_research.md` |
+| Brand voice, mechanism, positioning | `claude.md` §3 voice + `brand/` (design system, competitors) |
+| Performance review, kill rules, winners | `performance_data.md` + `tracking/TRACKER_SOP.md` |
+| Klaviyo / email flow draft | `email/flows/` (greenfield, being built) |
+| Compliance hard rails (Meta, claims) | `claude.md` compliance + `brand/` |
+| Production ad exports for reference | `Advertenties/` |
+| Wiki synthesis across Goatly topics | `wiki/` (cross-linked second-brain layer) |
+
+**Always start at `/Goatly_kennis/claude.md`** for the routing inside that canon. It is the single source of truth for marketing output.
+
+Do NOT read from `/Goatly_kennis/` for:
+
+- Daily journal entries or session logs (those stay here in `Daily/`).
+- Vault housekeeping (em-dashes, frontmatter, wikilinks).
+- Strategy-level questions (`Context/strategy.md` here is authoritative).
+- Identity / working style (`Context/me.md` here is authoritative).
+- General chat or "wat zou je doen?" type vragen.
+
+**Write-back rule:** when you generate ad copy / VSL / email flow output, save the result into `/Goatly_kennis/` under the matching subfolder, not here. This vault catches operator loops; that vault catches production marketing assets.
+
 ## Commands
 
-- `/setup` — Interactive onboarding to personalize this vault
+- `/dtc`, adopt de DTC-operator persona uit `Resources/prompts/dtc-operator-persona.md` voor de rest van het gesprek
+- `/promote`, verwerk goedgekeurde blokken uit `Resources/Operator/Promotion-Queue.md` naar hun target files
+- `/watch`, bekijk een video (URL of lokaal pad) via yt-dlp + frames + transcript
 
 ## Document Voice
 
@@ -78,7 +117,7 @@ Standard fields: `type`, `date`, `project`, `status`, `tags`, `priority`. Always
 
 ## Rules
 
-1. On FIRST response: read latest `Daily/` and `Context/me.md`.
+1. Session startup: zie boven (latest `Daily/` + `Context/me.md`, silent).
 2. When meaningful work happens (not casual chat) → write a session log to `Daily/YYYY-MM-DD.md`.
 3. Use `[[wikilinks]]` for EVERY entity (people, companies, projects, notes) in vault files. Weave into sentences.
 4. Every note: standalone & composable. Lego block.
@@ -93,6 +132,7 @@ Standard fields: `type`, `date`, `project`, `status`, `tags`, `priority`. Always
 13. Move completed projects to `Intelligence/archive/`.
 14. Include `project:` in frontmatter when a note relates to a specific project.
 15. NEVER create files/folders in vault root. Every file lives in an existing folder. No exceptions.
+16. **Compliance is [[me|Talat]]'s call, niet Claude's.** Talat heeft bij Meta gewerkt en weet wat wel/niet mag op het platform en in marketing-claims. Claude flagt NIET automatisch dingen als "fearmongering", "Meta-risico" of "niet veilig in copy". Lever de feiten + bron, Talat oordeelt. Wel toegestaan: feitelijke claims linken naar hun bron zodat verificatie mogelijk is. NIET toegestaan: ongevraagd "compliance check"-tabellen, "veilig in copy?"-oordelen, of paternalistische waarschuwingen over wat de avatar wel/niet kan lezen.
 
 ## Anti-Patterns
 
@@ -101,7 +141,7 @@ Do NOT:
 - Create orphan notes (always link from 1+ existing note)
 - Update vault files on casual chat
 - Cram all project info into `README.md` (route to subdirs)
-- Write project names, people, or note references as plain text — always use `[[wikilinks]]`
+- Write project names, people, or note references as plain text, always use `[[wikilinks]]`
 - Use `[markdown](links)` for internal vault notes
 
 <!-- USER CORRECTIONS: Add new rules below as the user teaches you -->

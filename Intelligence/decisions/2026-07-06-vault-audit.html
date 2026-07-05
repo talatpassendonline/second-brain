@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Audit 2026-07-06 — Second Brain</title>
+<style>
+  :root { --bg:#12140f; --card:#1c2017; --ink:#f5efe3; --dim:#a8a394; --green:#7fb069; --darkgreen:#2d5238; --red:#d9705f; --amber:#d9a441; --blue:#6f9ec9; --line:#2e332a; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--ink); font:15px/1.55 -apple-system,"Segoe UI",sans-serif; padding:32px 20px 80px; }
+  .wrap { max-width:960px; margin:0 auto; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  h2 { font-size:19px; margin:36px 0 12px; color:var(--green); }
+  .sub { color:var(--dim); margin-bottom:28px; }
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:20px 0; }
+  .tile { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .tile .big { font-size:26px; font-weight:700; }
+  .tile .lbl { font-size:12px; color:var(--dim); text-transform:uppercase; letter-spacing:.05em; }
+  .score-delta { color:var(--green); }
+  table { width:100%; border-collapse:collapse; background:var(--card); border-radius:10px; overflow:hidden; font-size:13.5px; margin:10px 0 22px; }
+  th,td { padding:8px 12px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--darkgreen); color:var(--ink); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  td.num, th.num { text-align:right; }
+  .good { color:var(--green); font-weight:600; }
+  .bad { color:var(--red); font-weight:600; }
+  .dim { color:var(--dim); }
+  .pill { display:inline-block; padding:2px 9px; border-radius:99px; font-size:11px; font-weight:700; letter-spacing:.03em; }
+  .pill.fixed { background:var(--darkgreen); color:#d8f0cf; }
+  .pill.declined { background:#3a3a34; color:#c9c4b4; }
+  .pill.failed { background:#5a2c24; color:#f3c3b9; }
+  .pill.fail-sev { background:var(--red); color:#20130f; }
+  .pill.warn-sev { background:var(--amber); color:#241c08; }
+  .pill.info-sev { background:var(--blue); color:#0f1a24; }
+  .finding { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; margin-bottom:10px; }
+  .finding .path { font-family:ui-monospace,monospace; font-size:12.5px; color:var(--blue); }
+  .finding p { margin-top:6px; font-size:13.5px; }
+  .finding .why { color:var(--dim); font-size:12.5px; margin-top:4px; }
+  .read { background:var(--card); border-left:4px solid var(--green); border-radius:8px; padding:16px 20px; margin:14px 0; }
+  .read p { margin-bottom:10px; }
+  .read p:last-child { margin-bottom:0; }
+  code { background:#262b21; padding:1px 5px; border-radius:4px; font-size:12.5px; }
+  .overflow { overflow-x:auto; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🧠 Vault Audit — Second Brain</h1>
+  <div class="sub">os-optimizer · 9 frameworks · 2026-07-06 · bulk-apply · 113 markdown files, ~50 folders</div>
+
+  <div class="tiles">
+    <div class="tile"><div class="big">55 → <span class="score-delta">98</span></div><div class="lbl">Score F1–G7 (+43)</div></div>
+    <div class="tile"><div class="big">27</div><div class="lbl">Findings (na judgment)</div></div>
+    <div class="tile"><div class="big">24</div><div class="lbl">Applied</div></div>
+    <div class="tile"><div class="big">2 / 1</div><div class="lbl">Declined / Failed</div></div>
+    <div class="tile"><div class="big">15</div><div class="lbl">Open loops gered</div></div>
+  </div>
+
+  <h2>Architectural read</h2>
+  <div class="read">
+    <p><strong>De curated laag stond op 17 juni, het werk op 6 juli.</strong> <code>strategy.md</code> kende geen UK-prioriteit terwijl Goatly-UK (35 files, 5 nieuwe ads) sinds 24 juni al het werk is. Elke agent die eerst Context leest startte met een verouderd wereldbeeld. Gefixt: juli-blok met UK-hendels, juni naar History (cijfer vult Talat in).</p>
+    <p><strong>De operator-pipeline faalt stil.</strong> De scheduled task vuurt dagelijks (laatste run 5 juli) maar schreef sinds 17 juni geen rapport en bevroor <code>Tasks.md</code> op 27 juni. Gevolg: 15 open checkboxes ouder dan 48h (PayPal UK, kortingsclaim 70% vs 30%, testimonials...) werden nooit gesurfaced. Precies het idea-vanishing dat de vault moet voorkomen. Catch-up gedaan; run-output check is aan Talat.</p>
+    <p><strong><code>Context/brand.md</code> was 0 bytes met 69 inbound links.</strong> Routing, recipes en operator-lint wezen allemaal naar een leeg bestand. Nu gevuld als dun canoniek anker met pointers naar voices/ en de kennisbank-canon.</p>
+  </div>
+
+  <h2>Per framework — voor → na</h2>
+  <div class="overflow"><table>
+    <tr><th>Framework</th><th class="num">Findings voor → na</th><th class="num">Fail</th><th class="num">Warn</th><th class="num">Applied</th><th class="num">Declined</th><th class="num">Failed</th></tr>
+    <tr><td>F1 Anthropic CLAUDE.md</td><td class="num">7 → <span class="good">0</span></td><td class="num">1 → 0</td><td class="num">6 → 0</td><td class="num">7</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>F2 Karpathy Wiki</td><td class="num">4 → <span class="good">0</span></td><td class="num">1 → 0</td><td class="num">3 → 0</td><td class="num">4</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>F3 Caveman</td><td class="num">1 → 1</td><td class="num">0</td><td class="num">1 → 1</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
+    <tr><td>F4 Chroma Context Rot</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>F5 Anthropic Memory</td><td class="num">2 → 1</td><td class="num">0</td><td class="num">2 → 1</td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr>
+    <tr><td>F6 Progressive Disclosure</td><td class="num">0 <span class="dim">(geen SKILL.md in vault)</span></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>G7 Hygiene</td><td class="num">3 groepen (23 files) → <span class="good">0</span></td><td class="num">0</td><td class="num">23 → 0</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>F8 Reflection <span class="dim">(niet gescoord)</span></td><td class="num">6 → <span class="good">0</span></td><td class="num">2 → 0</td><td class="num">4 → 0</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr>
+    <tr><td>F9 Architecture <span class="dim">(niet gescoord)</span></td><td class="num">4 → 1</td><td class="num">1 → 0</td><td class="num">2 → 1</td><td class="num">3</td><td class="num">0</td><td class="num">1</td></tr>
+  </table></div>
+  <p class="dim">Score F1–G7: 55 ("bloat is hurting performance") → 98 ("well-tuned"). Resterende 2 punten: bewust gedeclinede operator-prompt compressie/size.</p>
+
+  <h2>Per rol — voor → na</h2>
+  <div class="overflow"><table>
+    <tr><th>Rol</th><th class="num">Files</th><th class="num">Em-dashes</th><th class="num">Frontmatter issues</th><th class="num">Bijzonderheden</th></tr>
+    <tr><td>Context (curated)</td><td class="num">9</td><td class="num">0 → 0</td><td class="num">1 → <span class="good">0</span></td><td>brand.md gevuld; strategy/business/me naar juli-stand</td></tr>
+    <tr><td>Projects (Goatly-UK + Lichtendirect)</td><td class="num">35</td><td class="num">30 → <span class="good">2*</span></td><td class="num">0</td><td>README volledig geïndexeerd; angle-board actueel; *protected zones</td></tr>
+    <tr><td>Daily (session)</td><td class="num">13</td><td class="num">0</td><td class="num">1 → <span class="good">0</span></td><td>lege 17-juni backfilled; 15 loops → Tasks.md</td></tr>
+    <tr><td>Research (extracts + transcripts)</td><td class="num">33</td><td class="num">0</td><td class="num">6 → <span class="good">0</span></td><td>6 transcripts → <code>{slug}-transcript.txt</code>, Source-lines bijgewerkt</td></tr>
+    <tr><td>Operator state</td><td class="num">3</td><td class="num">3 → 1*</td><td class="num">0</td><td>Open Loops catch-up + stall-warning; *grep-pattern in code</td></tr>
+    <tr><td>Voices / prompts / playbooks / skills</td><td class="num">13</td><td class="num">0</td><td class="num">4 → <span class="good">0</span></td><td>9 dubbele H1's gestript</td></tr>
+    <tr><td>CLAUDE.md laag (10 files)</td><td class="num">10</td><td class="num">0</td><td class="num">—</td><td>routing klopt weer met folder-realiteit; business-mode rest weg</td></tr>
+  </table></div>
+
+  <h2>De 5 fails</h2>
+  <div class="finding"><span class="pill fail-sev">FAIL</span> <span class="pill fixed">FIXED THIS RUN</span> <span class="path">Context/brand.md</span><p>0 bytes terwijl 69 wikilinks, de routing-tabel en de operator voice-lint ernaartoe wijzen.</p><div class="why">Fix: dun canoniek anker (wedge, Food-Not-Pills spine, voice DO/DON'T, pointers naar voices/ + kennisbank §3). Citaat: karpathy-llm-wiki → stub notes / dead ends.</div></div>
+  <div class="finding"><span class="pill fail-sev">FAIL</span> <span class="pill fixed">FIXED THIS RUN</span> <span class="path">Context/strategy.md</span><p>"This month, June 2026" op 6 juli; UK-launch (het feitelijke hoofdwerk sinds 24 juni) ontbrak volledig.</p><div class="why">Fix: juli-blok met UK-hendels uit de dailies (PDP-CVR, freeze tot ~9 juli, review-flow, AOV), juni naar History. Junicijfer vult Talat in. Citaat: anthropic-dreams → stale assumptions.</div></div>
+  <div class="finding"><span class="pill fail-sev">FAIL</span> <span class="pill fixed">FIXED THIS RUN</span> <span class="path">Daily/*.md → Resources/Operator/Tasks.md</span><p>15 open checkboxes ouder dan 48h nooit gesurfaced (operator-stall): PayPal UK, 70%-vs-30% kortingsclaim, testimonial-vertaling, Shopify-connector, NL-terugval, business verification.</p><div class="why">Fix: alle 15 verbatim + bron in Tasks.md ## Open Loops gezet. Citaat: anthropic-dreams → promotie sessie→canoniek.</div></div>
+  <div class="finding"><span class="pill fail-sev">FAIL</span> <span class="pill fixed">FIXED THIS RUN</span> <span class="path">scheduled task: goatly-vault-operator-daily</span><p>Vuurt dagelijks (laatste run 5 juli 17:00Z) maar geen rapport sinds 17 juni, Tasks.md bevroor 27 juni: runs falen stil.</p><div class="why">Vault-kant gefixt (catch-up + warning in Tasks.md + memory). De task zelf: Talat checkt de run-output. Citaat: anthropic-architecture → pipeline truth.</div></div>
+  <div class="finding"><span class="pill fail-sev">FAIL</span> <span class="pill fixed">FIXED THIS RUN</span> <span class="path">Resources/CLAUDE.md</span><p>Structuurtabel beschreef frameworks/, templates/, tools/, swipe/, companies/, archive/ (bestaan niet) en miste ad-copy/, playbooks/, research/, voices/, Finance/ (bestaan wel).</p><div class="why">Fix: tabel herschreven naar realiteit; niet-bestaande categorieën gemarkeerd als create-on-first-drop. Citaat: anthropic-architecture → routing-truthfulness.</div></div>
+
+  <h2>Declined / failed</h2>
+  <div class="finding"><span class="pill warn-sev">WARN</span> <span class="pill declined">DECLINED</span> <span class="path">Resources/Operator/operator-prompt.md</span><p>F3/F5: 21.5KB, kernregels 3-4x herhaald; ~20-25% compressie mogelijk.</p><div class="why">Bewust gelaten: de herhaling is compliance-engineering voor een autonome agent (regels die maar één keer staan worden door agents vaker genegeerd). Compressie zou het spec verzwakken.</div></div>
+  <div class="finding"><span class="pill warn-sev">WARN</span> <span class="pill failed">FAILED</span> <span class="path">scheduled task: vault-operator-daily (duplicaat)</span><p>Oude uitgeschakelde duplicaat-task naast de actieve.</p><div class="why">failure_reason: de scheduled-tasks tool kent geen delete, alleen enable/disable (staat al uit). Verwijderen kan via de Claude app UI → scheduled tasks.</div></div>
+
+  <h2>Belangrijkste warns (alle applied)</h2>
+  <div class="overflow"><table>
+    <tr><th>Wat</th><th>Fix</th></tr>
+    <tr><td>14x dode wikilink <code>[[Goatly]]</code> in 12 files</td><td>→ <code>[[business|Goatly]]</code> (vault-conventie, 155 bestaande links)</td></tr>
+    <tr><td>30 em-dashes in 8 files</td><td>Vervangen door dubbele punt/komma per context; 3 blijven in protected zones (quoted headline-formule, Liquid-code, grep-pattern)</td></tr>
+    <tr><td>9 dubbele H1's (team, CalciumChew, 3 voices, 2 prompts, 2 skill-examples)</td><td>H1 gestript (filename is al de titel)</td></tr>
+    <tr><td>6 raw podcast-transcripts als .md met rommelige namen (incl. trailing space)</td><td>Hernoemd naar <code>{slug}-transcript.txt</code> per folder-recipe; Source-lines in extracts bijgewerkt</td></tr>
+    <tr><td>Goatly-UK README: dubbele "## Research" + 10 files niet geïndexeerd</td><td>Secties samengevoegd, alle 17 copy-files + whitespace-research + Offer-sectie geïndexeerd; 5 orphans daarmee gelinkt</td></tr>
+    <tr><td>angle-test-board: "lead avatar heeft 0 ads" terwijl UK04v2/15/16/17/19 geschreven zijn</td><td>Roster-tabel bijgewerkt + freeze-afspraak tot ~9 juli genoteerd</td></tr>
+    <tr><td>Business-mode restmateriaal in Daily/Intelligence/Projects CLAUDE.mds</td><td>Gestript / herschreven naar professional-mode realiteit</td></tr>
+    <tr><td>Root Commands-sectie: alleen dode /setup</td><td>Nu /dtc, /promote, /watch; Goatly-Knowledge symlink gedocumenteerd</td></tr>
+    <tr><td>podcasts-recipe: <code>[[ebook-slug]]</code> copy-paste fout</td><td>→ <code>[[episode-slug]]</code></td></tr>
+    <tr><td>business.md / me.md op juni-stand, NL-only</td><td>UK-store + £-pricing + PDP-CVR lek erin; juni-cijfers gedateerd</td></tr>
+  </table></div>
+
+  <h2>Judged out (triggers gevuurd, geen finding)</h2>
+  <div class="overflow"><table>
+    <tr><th>Kandidaat</th><th>Waarom geen finding</th></tr>
+    <tr><td>8 dailies zonder <code>status:</code></td><td>Daily/CLAUDE.md's eigen template = alleen type + date; folder-conventie wint</td></tr>
+    <tr><td><code>[[Anna Veerman]]</code>, <code>[[Morra]]</code> e.a. zonder file</td><td>Intentionele Obsidian entity-links (rule 3: wikilink elke entiteit)</td></tr>
+    <tr><td><code>[[me\|Talat]]</code> "broken" links</td><td>Escaped pipe in tabellen: geldige syntax</td></tr>
+    <tr><td><code>[[VSL_AS47]]</code>, <code>[[performance_data]]</code></td><td>Resolven via de Goatly-Knowledge symlink in Obsidian</td></tr>
+    <tr><td>Transcript + extract paren in podcasts/</td><td>Bewust recept ("blijft hier permanent")</td></tr>
+    <tr><td>Research/copy files &gt; 10KB</td><td>Referentie-laag, legitiem lang, niet auto-loaded</td></tr>
+    <tr><td>En-dash "3–5" + em-dash grep-pattern in operator-prompt</td><td>Numerieke range (canoniek) + inline code (protected)</td></tr>
+  </table></div>
+
+  <p class="dim" style="margin-top:30px">Sidecar: <code>Intelligence/decisions/2026-07-06-vault-audit-findings.json</code> · Vorige audit: 2026-06-17 · Advies: maandelijks draaien nu de vault stabiel is, of na elke grote projectgolf.</p>
+</div>
+</body>
+</html>

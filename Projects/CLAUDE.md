@@ -23,15 +23,12 @@ When the user mentions something about a project, analyze it and route to the ri
 
 ## Goal Cascade
 
-Every action should trace back to an organizational objective:
+Every action should trace back to a strategic priority:
 
 ```
-Company OKRs -> Department Goals -> Projects -> Monthly Focus -> Weekly Review -> Daily Tasks
+Context/strategy.md priorities -> Projects -> Weekly Review -> Daily/Tasks.md
 ```
 
-- Company OKRs and department goals live in `Context/strategy.md`
-- Department-specific goals live in `Departments/{name}/README.md`
-- Projects in `Projects/` link to OKRs and department goals
-- Tasks link to projects via the active profile's `task-list/`
-- During weekly reviews, check which OKRs have no active project (they're drifting)
-- During quarterly reviews, assess OKR progress and cascade updates
+- Priorities live in `Context/strategy.md`; projects in `Projects/` link back to them.
+- Open tasks and loops live in `Resources/Operator/Tasks.md` and today's `Daily/` note.
+- During weekly reviews, check which priorities have no active project (they're drifting).
