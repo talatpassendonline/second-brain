@@ -17,6 +17,20 @@ Last run: 2026-06-27T09:00:00Z
 
 ## Open Loops
 
+> [!warning] BLOCKER 2026-07-13: Meta ad account geband (was bij agency [[team|Nova]])
+> [[me|Talat]] meldt: het ad account bij agency Nova is geband. Zijn eigen persoonlijke FB-profiel kan geen BM/profiel meer maken (dus profiel is restricted). Overweegt een BM via zijn vaders account. Advies gegeven: eerst diagnosticeren, niet meteen vaders-account (fragiel + verbrandt vaders profiel bij relink).
+> **Diagnose 2026-07-13 (ban-reden bekend):** agency (Nova, aan [[team|Morra]]) meldt: ad account gesloten wegens **high scam rate uit Meta's post-purchase survey**. Dit is een **Customer Feedback Score (CFS)-ban**, geen policy- of bought-BM-ban. CFS onder 2 = straf, op/onder 1 = advertentieverbod. Betekenis: echte kopers hebben de aankoop als scam/slechte ervaring beoordeeld.
+> **Kern: dit hangt aan business/Page/domein/klantervaring, NIET aan het ad account.** Nieuw ad account of vaders-BM lost niks op zolang de funnel dezelfde scam-score genereert. Bijna niet te appealen (aggregaat klantsentiment). BM zelf leeft nog; alleen het ad account is weg.
+> Herstelpad, in juiste volgorde (funnel eerst, account laatst):
+> - [ ] **Check het echte cijfer**: Account Quality → Customer Feedback. CFS-waarde + op welke dimensie (shipping / product / service / niet-zoals-beschreven).
+> - [ ] **Fix de scam-drivers vóór nieuwe spend** (staan al maanden open in deze file):
+>   - Prijs-bait: advertorial "up to 70% OFF" vs PDP "30% OFF", 3-pack £64.95 ad vs £59.95 cart, niet-bestaande "FREE GIFTS" (loop 2026-07-02).
+>   - Levering: 6-weken wachttijd, customs-charges, **17TRACK-tracking werkt niet** (loops 2026-07-02/06). Nr-1 CFS-driver.
+>   - [[lasso-loop-subscriptions-setup|Subscription-loop]]: verrassings-incasso = zware scam-trigger. Glashelder maken of eruit.
+> - [ ] **Pas daarna** nieuw ad account (via [[team|Morra]]'s schone profiel, want Talat's profiel is restricted), nieuwe betaalmethode, rustig opwarmen via [[scaling-playbook]] zodat nieuwe surveys positief zijn.
+> - [ ] Vaders-account kan de schone legit basis worden, maar pas ná de funnel-fix, anders verbrandt dezelfde scam-score ook dat profiel.
+> - [ ] Business verification (KvK) afronden blijft nuttig maar is niet de oorzaak hier.
+
 Catch-up 2026-07-06 (vault-audit): de operator heeft sinds 27 juni geen loops meer gesurfaced terwijl er 15 open checkboxes ouder dan 48h in de dailies stonden. Hieronder verbatim, met bron.
 
 Uit `Daily/2026-06-29.md` (advertorial/store):

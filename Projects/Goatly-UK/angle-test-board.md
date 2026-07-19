@@ -22,9 +22,15 @@ Status-board voor de UK ad-angles. Bron: [[uk-angles]] (7 belief-gap angles voor
 | [[uk-diane-stable-not-restored-longform-native]] (UK16, Diane_BiscuitTin) | generational fear | stable-not-restored | lang native story | live-kandidaat, v2 de-fingerprinted |
 | [[uk-science-teacher-stable-not-restored-longform-native]] | Betrayed Pill-Taker + generational fear | stable-not-restored + escort-proteïnen | lang native story | geschreven (1 jul) |
 | [[uk-frozen-gardener-allotment-key-longform-native]] (UK17, Gillian_AllotmentKey) | Frozen Gardener | bewegingsangst / Stillness Is the Trap | lang native story | geschreven (2 jul) |
-| [[uk-adherence-halffull-pot-longform-native]] (UK19, Wendy_HalfFullPot) | Betrayed Pill-Taker (quiet quitter) | adherence-bekentenis / You were not weak, you were early | lang native story + VIRAL-composite slot 3 | geschreven (2 jul) |
+| [[uk-adherence-halffull-pot-longform-native]] (Wendy_HalfFullPot, **in Meta gelaunched als UK17**) | Betrayed Pill-Taker (quiet quitter) | adherence-bekentenis / You were not weak, you were early | lang native story + VIRAL-composite slot 3 | live (laatste launch vóór 18/19) |
+| [[uk-shrinking-tumble-dryer-longform-native]] (UK18, Pauline_TumbleDryer) | pre-diagnose + Vanishing Frame | krimpen/lengteverlies, ROS-cijfers, meet-ritueel als payoff | lang native story, geen mid-CTA | launch-klaar (dubbel-dubbel-pass gedaan) |
+| [[uk-two-tuesdays-loop-longform-native]] (UK19, Christine_TwoTuesdays) | onafhankelijkheid / eigen regie | eerste loop-ad (pain→relief→pain) + N.E.S.B., voordeursleutel-symbool | lang native story, geen mid-CTA | launch-klaar |
+| [[uk-mothers-pattern-listicle-relaunch]] (UK20, Helen_MothersPattern, relaunch) | generational fear / mother's pattern | 5-signs listicle, format-test; fixes: .com-URL, mechanisme ingekort, stable-not-restored payoff | listicle | launch-klaar (10 jul, niet naast UK16/UK18) |
 
-Roster per 2 juli: schuld (UK04v2), generational fear (UK16), bewegingsangst (UK17), schaamte/het geheim (UK19). Freeze-afspraak tot ~9 juli: alleen Nadine-wissel + UK19 live, daarna 5-7 dagen handen af (zie [[2026-07-02]]).
+> [!warning] Nummering: Meta is leidend
+> Interne nummers liepen vooruit op Meta. Laatste gelaunchte in Meta = Wendy = **UK17** (file droeg intern "UK19"). Daarom: Pauline = UK18, Christine = UK19, dentist-pitch = UK20. Bij twijfel: kijk in Ads Manager, niet in de files.
+
+Roster per 6 juli: schuld (UK04v2), generational fear (UK16), bewegingsangst (Gillian), schaamte/adherence (Wendy/UK17 live), krimpen (UK18), onafhankelijkheid via loop (UK19). Vanaf UK18 geen mid-ad CTA meer (besluit [[me|Talat]] 6 jul). Ritme herzien op 6 juli: dagelijks nieuwe ads launchen; lopende adsets niet aanpassen tot 3-7 dagen data, oordelen op Shopify-gereconcilieerde CPA (achtergrond van de oorspronkelijke freeze: [[2026-07-02]]).
 
 → Correctie (live ads doorgelezen in kennisbank Advertenties/UK): de Pill-Taker had NIET "0 ads". Er draait al een live solution-aware suite (Sarah Henley 19yr patient, nurse, sneeze, listicle "5 things", "your calcium pill did nothing" bullets). Plus 2 TOF unaware (mother's pattern bullets + listicle) en de 2 unaware long natives (doorframe, belly). Mijn [[uk-pilltaker-a6-professors|batch 1]] + [[uk-pilltaker-longform-native|native]] zijn dus aanvullingen/alternatieven, geen gap-fill. Congruentie-audit van alle live ads vs de advertorial: zie [[uk-advertorial-congruence]].
 

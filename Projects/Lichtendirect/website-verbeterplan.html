@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Verbeterplan — Lichtendirect</title>
+<style>
+  :root{
+    --bg:#f4f2ec; --card:#ffffff; --ink:#2c2c28; --muted:#6c6c63;
+    --line:#e7e3d9; --accent:#7c8560; --accent-dark:#5c6446; --accent-soft:#eef0e6;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:840px;margin:0 auto;padding:0 20px 64px}
+  header.top{padding:44px 0 24px;text-align:center}
+  .brand{font-family:var(--serif);letter-spacing:.28em;font-size:13px;color:var(--accent-dark);text-transform:uppercase}
+  h1{font-family:var(--serif);font-weight:600;font-size:34px;margin:14px 0 6px}
+  .sub{color:var(--muted);font-size:16px;margin:0}
+  .meta{color:var(--muted);font-size:13px;margin-top:10px}
+  .intro{background:var(--accent-soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:8px 0 4px;color:#3d3d36;font-size:15px}
+  /* progress */
+  .progress{position:sticky;top:0;z-index:5;background:rgba(244,242,236,.92);backdrop-filter:blur(6px);
+    padding:14px 0;margin-bottom:8px;border-bottom:1px solid var(--line)}
+  .progress .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  #count{font-weight:600;font-size:14px;color:var(--accent-dark);white-space:nowrap}
+  .track{flex:1;height:9px;background:#e3e0d6;border-radius:99px;overflow:hidden}
+  #bar{height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .25s ease}
+  #reset{border:1px solid var(--line);background:#fff;color:var(--muted);font-size:12px;
+    padding:6px 12px;border-radius:99px;cursor:pointer;white-space:nowrap}
+  #reset:hover{color:var(--ink);border-color:#cfc9bb}
+  /* sections */
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px 8px;margin:16px 0;
+    box-shadow:0 1px 2px rgba(0,0,0,.02)}
+  .sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:2px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none;transform:translateY(-2px)}
+  h2{font-family:var(--serif);font-weight:600;font-size:21px;margin:0}
+  .why{color:var(--muted);font-size:13.5px;font-style:italic;margin:2px 0 14px 19px}
+  ul{list-style:none;margin:0;padding:0}
+  li{border-top:1px solid var(--line);padding:0}
+  li:first-child{border-top:none}
+  label{display:flex;align-items:flex-start;gap:13px;padding:13px 2px;cursor:pointer}
+  input[type=checkbox]{appearance:auto;accent-color:var(--accent);width:19px;height:19px;margin:2px 0 0;flex:none;cursor:pointer}
+  .txt .t{font-weight:600;font-size:15px}
+  .txt .d{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+  li.done .txt .t{text-decoration:line-through;color:var(--muted);text-decoration-color:var(--accent)}
+  li.done .txt .d{opacity:.6}
+  li.done{opacity:.85}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:34px;line-height:1.7}
+  footer strong{color:var(--accent-dark)}
+  @media (max-width:520px){ h1{font-size:27px} .why{margin-left:0} section{padding:18px 16px 6px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">Lichtendirect</div>
+    <h1>Website Verbeterplan</h1>
+    <p class="sub">Wat we per onderdeel van de site verbeteren, en waarom</p>
+    <p class="meta">Opgesteld door Passendonline · 15 juli 2026</p>
+  </header>
+
+  <p class="intro">De webshop presteert goed en groeit hard. Dit plan bundelt de verbeteringen waarmee we die groei verder aanjagen, opgedeeld per onderdeel van de site. U kunt hieronder meelezen en de voortgang volgen: afgevinkte punten zijn afgerond.</p>
+
+  <div class="progress">
+    <div class="row">
+      <span id="count">0 / 0 afgerond</span>
+      <div class="track"><div id="bar"></div></div>
+      <button id="reset" type="button">Wissen</button>
+    </div>
+  </div>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Productpagina</h2></div>
+    <p class="why">De pagina waar de koopbeslissing valt. Doel: bezoekers sneller en beter overtuigen.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="pp1"><span class="txt"><span class="t">Belangrijkste voordelen meteen zichtbaar</span><span class="d">De sterke punten van elk product (waterdicht, warm licht, koppelbaar, garantie) direct bovenaan tonen, in plaats van verstopt in een uitklapmenu.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp2"><span class="txt"><span class="t">Positieve reviews vooraan</span><span class="d">De beste beoordelingen als eerste laten zien in plaats van toevallig een kritische.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp3"><span class="txt"><span class="t">Productinformatie automatisch compleet</span><span class="d">Alle productgegevens netjes en consistent op elke pagina, zonder handwerk per product.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp4"><span class="txt"><span class="t">Uitleg en sfeerbeelden op de pagina zelf</span><span class="d">Waarom-uitleg en foto's (waterdichtheid, koppelbaar systeem, energiezuinig) op de pagina tonen in plaats van weggestopt tussen de productfoto's.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp5"><span class="txt"><span class="t">Overzichtelijker op mobiel</span><span class="d">Rustiger indeling, minder lege ruimte, de bestelknop beter in beeld.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp6"><span class="txt"><span class="t">"Gerelateerde producten" opschonen</span><span class="d">Niet doorverwijzen naar concurrerende producten die bezoekers wegleiden van de bestelling.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp7"><span class="txt"><span class="t">Bezorgbelofte duidelijk in beeld</span><span class="d">"Voor 17:00 besteld, morgen in huis" als opvallende badge bij de koopknop.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp8"><span class="txt"><span class="t">Betaalmethodes bij de koopknop</span><span class="d">iDEAL, Klarna en de rest tonen voor extra vertrouwen op het beslismoment.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp9"><span class="txt"><span class="t">Ruimte voor productvideo's</span><span class="d">Mogelijkheid om per product een video te tonen.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="pp10"><span class="txt"><span class="t">Kleine correcties</span><span class="d">Dubbele titel weg, Nederlandse datumnotatie, knoppen met duidelijke tekst.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Homepage</h2></div>
+    <p class="why">De etalage. Doel: vertrouwen wekken en bezoekers de juiste richting op sturen.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="hp1"><span class="txt"><span class="t">Meer over het bedrijf</span><span class="d">Minder nadruk op het volledige assortiment, meer vertellen wie Lichtendirect is en waarom mensen hier kopen.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hp2"><span class="txt"><span class="t">Trustpilot-sectie bijwerken</span><span class="d">De reviewsectie verbeteren en het aantal reviews actualiseren (nu 414, de site toont nog 402).</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hp3"><span class="txt"><span class="t">Blogsectie vernieuwen</span><span class="d">De sectie met advies en tips van de experts opfrissen.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hp4"><span class="txt"><span class="t">Footer verzorgen</span><span class="d">De onderkant van de site netter en professioneler maken.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hp5"><span class="txt"><span class="t">Openingstekst leesbaar maken</span><span class="d">De tekst op de grote openingsfoto beter leesbaar maken (nu lichte tekst op een lichte foto).</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Categoriepagina</h2></div>
+    <p class="why">De pagina met producten per soort. Doel: sneller naar het juiste product.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="cp1"><span class="txt"><span class="t">Redesign</span><span class="d">De categoriepagina opnieuw vormgeven, overzichtelijker en rustiger.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="cp2"><span class="txt"><span class="t">Grote afbeelding bovenaan weghalen</span><span class="d">De banner bovenaan verwijderen zodat bezoekers direct bij de producten zijn.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="cp3"><span class="txt"><span class="t">Trustpilot bijwerken</span><span class="d">De beoordeling actualiseren.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Menu &amp; navigatie</h2></div>
+    <p class="why">Doel: bezoekers vinden sneller wat ze zoeken.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="mn1"><span class="txt"><span class="t">Categorieën vooraan</span><span class="d">Het menu opschonen zodat de productcategorieën direct vooraan staan.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Contactpagina</h2></div>
+    <p class="why">Doel: bezoekers vinden zelf antwoord, waardoor de klantenservice minder vragen krijgt.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="ct1"><span class="txt"><span class="t">Volledige redesign met veelgestelde vragen</span><span class="d">Niet alleen een contactformulier, maar duidelijke antwoorden op veelgestelde vragen, zodat er na verloop van tijd minder klantvragen binnenkomen.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Bovenbalk (op elke pagina)</h2></div>
+    <p class="why">De balk bovenaan de site. Doel: vertrouwen en gemak op elke pagina.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="hd1"><span class="txt"><span class="t">Trustpilot-score in de bovenbalk</span><span class="d">De beoordeling netjes tussen logo en zoekbalk, met sterren en aantal reviews.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hd2"><span class="txt"><span class="t">Oude losse reviewbalk weghalen</span><span class="d">De dubbele reviewbalk eronder verwijderen.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hd3"><span class="txt"><span class="t">Menu blijft meescrollen</span><span class="d">Het menu blijft in beeld tijdens het scrollen, zodat navigeren makkelijker is.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="hd4"><span class="txt"><span class="t">Reviewscore van de winkel bij de titel</span><span class="d">De totale beoordeling van Lichtendirect zichtbaar bij de producttitel.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Onder de motorkap</h2></div>
+    <p class="why">Techniek die het geheel sneller en makkelijker te onderhouden maakt.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="tk1"><span class="txt"><span class="t">Productgegevens centraal structureren</span><span class="d">Alle productdata één keer goed vastleggen zodat die overal automatisch klopt. Bespaart veel handwerk en houdt de site consistent.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="tk2"><span class="txt"><span class="t">Overbodige apps opschonen</span><span class="d">Waar mogelijk losse apps vervangen door ingebouwde oplossingen, voor snelheid en overzicht.</span></span></label></li>
+      <li><label><input type="checkbox" data-id="tk3"><span class="txt"><span class="t">Snelheid fijn afstellen</span><span class="d">De site is al snel voor echte bezoekers; kleine optimalisaties waar het kan.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="dot"></span><h2>Groter idee (te bespreken)</h2></div>
+    <p class="why">Een grotere keuze die we los even willen overleggen.</p>
+    <ul>
+      <li><label><input type="checkbox" data-id="gr1"><span class="txt"><span class="t">Eén pagina per producttype met keuzeopties</span><span class="d">Overwegen om bijvoorbeeld alle lichtsnoeren op één pagina te zetten met keuze voor lengte en aantal, in plaats van veel losse bijna-identieke pagina's. Dat bundelt de reviews en is duidelijker voor de bezoeker.</span></span></label></li>
+    </ul>
+  </section>
+
+  <footer>
+    <strong>Passendonline</strong> voor Lichtendirect<br>
+    Je vinkjes worden in deze browser bewaard, ook als je de pagina sluit.
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var KEY='ld-verbeterplan-v1';
+    var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox][data-id]'));
+    var state={};
+    try{ state=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ state={}; }
+    function render(){
+      var done=0;
+      boxes.forEach(function(b){
+        var on=!!state[b.dataset.id];
+        b.checked=on;
+        b.closest('li').classList.toggle('done',on);
+        if(on)done++;
+      });
+      var total=boxes.length;
+      document.getElementById('count').textContent=done+' / '+total+' afgerond';
+      document.getElementById('bar').style.width=(total?(done/total*100):0)+'%';
+    }
+    boxes.forEach(function(b){
+      b.addEventListener('change',function(){
+        state[b.dataset.id]=b.checked;
+        try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){}
+        render();
+      });
+    });
+    document.getElementById('reset').addEventListener('click',function(){
+      if(confirm('Alle vinkjes wissen?')){ state={}; try{localStorage.setItem(KEY,'{}');}catch(e){} render(); }
+    });
+    render();
+  })();
+</script>
+</body>
+</html>

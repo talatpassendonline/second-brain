@@ -20,7 +20,7 @@ Build [[business|Goatly]] into a brand big enough to retire Talat's parents and 
 Hendels (uit de dailies, volgorde van verwachte impact):
 
 1. **PDP-CVR fixes**: PayPal Express activeren + NL/BE-betaallogo's weg, bezorg/douane-trust-regel, NL-testimonialblok vertalen. Elke punt PDP-CVR is ~6,7 orders/week. Open loops staan in `Resources/Operator/Tasks.md`.
-2. **Freeze-discipline tot ~9 juli**: alleen Nadine-wissel + UK19 live, daarna 5-7 dagen handen af (alleen kill-rules). Daarna: CPA per adset (Shopify-gereconcilieerd), AOV + P1/P3-split, CTR per hook.
+2. **Launch-ritme i.p.v. totale freeze** (herzien door [[me|Talat]], 6 jul): elke dag nieuwe ads blijven launchen, dat is nodig. Wat WEL bevroren blijft: lopende adsets niet aanpassen (copy, budget, advertorial-secties) tot ze 3-7 dagen data hebben, oordelen op Shopify-gereconcilieerde CPA en niet op dag-1 ROAS, en depth-not-area bewaken: nieuwe launches gepaard met pauzeren van verliezers zodat spend niet versnippert.
 3. **Review-flow** (canon prioriteit #1): grootste CVR-hefboom, nog steeds onbuilt. Beslissing [[me|Talat]] 6 jul: bouwen zodra de UK-ads goed lopen, niet eerder.
 4. **AOV**: [[90-day-cycle-aov-fix]] live; P3/P6 push bepaalt winst per order.
 
@@ -35,7 +35,7 @@ Project folders intentionally not scaffolded yet, Talat wants to discuss them la
 ### 0. UK-launch (sinds 24 juni het hoofdwerk)
 
 - **Waar:** [[Goatly-UK]] (research, copy-roster UK04v2/15/16/17/19, advertorial v4, offer, scaling-playbook).
-- **Status:** live op trygoatly.com, aparte UK-market. Loopt nog niet naar wens ([[me|Talat]], 6 jul). Freeze tot ~9 juli, dan meten. NL-ads bewust uit: dit is nu de enige motor.
+- **Status:** live op trygoatly.com, aparte UK-market. Loopt nog niet naar wens ([[me|Talat]], 6 jul). Ritme: dagelijks nieuwe ads launchen; lopende adsets met rust laten tot ze 3-7 dagen data hebben. NL-ads bewust uit: dit is nu de enige motor.
 - Deze prioriteit stond hier eerst niet gedocumenteerd terwijl al het werk er al zat: precies het drift-patroon dat deze file moet voorkomen.
 
 ### 1. VSL learning + production
@@ -79,6 +79,10 @@ To focus on the priorities above, **not doing** until June close (juli-versie no
 - **No huid / eczeem 50+ funnel work.** Parked. Different avatar.
 - **No TikTok Shop / Google Ads / Pinterest experiments.** Meta CBO is the channel, double down.
 - **No new SKU.** One product, one funnel, sharper.
+
+## Open strategisch item: positionering / witte ruimte
+
+**De onbeantwoorde kernvraag:** welke positie bezit [[business|Goatly]] die [[competitor_rynse|Rynse]] (of pharma) niet kan claimen? Nu differentiëren we op mechanisme/kwaliteit (A2, één ingrediënt, "juiste vorm"), wat gedeelde, kopieerbare grond is. Hypothese uit onze eigen research: de "against" is niet de calciumpil (Rynse ook), maar het "je wordt gewoon ouder"-wegwuiven, de invisible-woman-positie (identiteit = ownable). Rynse is nog klein, dus het raam staat open om die positie als eerste te pakken. Volledige afweging + te maken beslissing: [[positionering-witte-ruimte]]. Raakt [[brand]], About/community-page en voice, dus dit is merk-niveau, geen ad-tweak.
 
 ## Open analytical items (still relevant)
 

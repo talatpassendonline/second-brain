@@ -46,6 +46,10 @@ Research gestart op 2026-06-24. Prompts van [[me|Talat]], uitwerking door Claude
 - [[uk-adherence-halffull-pot-longform-native]]: Wendy_HalfFullPot_UK19, de quiet quitter (gestopt, liegt erover bij de check-up). False-belief flip: "You were not weak. You were early."
 - [[uk-vanishing-frame-longform-native]]: derde Vanishing Frame ad, height-loss bekentenis ("I blamed my posture, my shoes, getting older"). Korte zinnen, escalatie-patroon.
 
+## Feedback
+
+- [[uk-adherence-halffull-pot-copyedit]]: English/copyedit pass op [[uk-adherence-halffull-pot-longform-native|Wendy_HalfFullPot_UK19]]. Top issue: de tijdlijn-som klopt niet (twee jaar / tien maanden / acht maanden geleden sluiten niet op elkaar aan, zes maanden gat). Tweede: de productalinea ("gently dried at low temperature... A2 milk") valt uit Wendy's stem in pack-copy, precies op het reveal-moment. Verdict: ready with fixes, geen rewrite.
+
 ## Offer
 
 - [[90-day-cycle-aov-fix]]: bundel-herframing op de 90-dagen botcyclus (P3 = één volledige cyclus, MEEST GEKOZEN; P6 = twee cycli). AOV-hendel voor de breakeven-som uit [[2026-07-02]].
@@ -53,6 +57,7 @@ Research gestart op 2026-06-24. Prompts van [[me|Talat]], uitwerking door Claude
 ## Scaling
 
 - [[scaling-playbook]]: UK ad scaling framework ([[Morra]]'s strategie). Verdubbelen tot €400, daarna +€200 stappen tot €1000. Trigger: 2 dagen 20%+ marge. Harde stop bij €400 als bank onder €4k (Stripe 3-dag delay).
+- [[in-house-ad-launcher]]: geparkeerd idee, eigen Meta bulk ad-launcher (Next.js + Marketing API, geen externe SaaS voor toegang). Re-entry-trigger: 1 winnende ad + 2-4 weken stabiel account + volume is de bottleneck. Bron-gids: [[ad-launcher-build-guide]].
 
 ## Angles / testing
 
