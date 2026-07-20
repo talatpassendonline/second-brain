@@ -75,6 +75,20 @@ Do NOT read from `/Goatly_kennis/` for:
 
 **Write-back rule:** when you generate ad copy / VSL / email flow output, save the result into `/Goatly_kennis/` under the matching subfolder, not here. This vault catches operator loops; that vault catches production marketing assets.
 
+## Marketing Skills
+
+Bij marketing-werk de passende skill laden VOORDAT je begint (niet erna als check). Routing:
+
+| Werk | Skill |
+|---|---|
+| Angle/creative/markt-move beoordelen, competitor-analyse, "waarom werkt dit niet meer" | `contrast-check` |
+| Research vóór copy: VOC, awareness-stages, keystone beliefs, delta-boog | `voc-research` |
+| Hooks, koppen, subject lines, openingsregels, scroll stoppers | `hook-punch` |
+| Performance review, kill/keep, scale-beslissing, AOV/LTV | `unit-economics` |
+| Angle-test of objection-mining zonder echte klanten | `avatar-sim` |
+
+Voor groter of parallel werk: delegeer aan de gelijknamige agents (`contrast-checker`, `voc-researcher`, `hook-writer`, `economics-auditor`, `avatar-simulator`). Bronnen-doctrine achter de skills: `Resources/research/videos/`.
+
 ## Commands
 
 - `/dtc`, adopt de DTC-operator persona uit `Resources/prompts/dtc-operator-persona.md` voor de rest van het gesprek

@@ -83,8 +83,9 @@ Levende changelist voor de [[Lichtendirect]] CRO-ronde. Alles wat we gaan aanpas
 
 ### Categoriepagina
 - [ ] Redesign
-- [ ] Grote afbeelding bovenaan weg
+- [~] Grote afbeelding bovenaan weg (leidde af). `banner_image` leeggedwongen in `main-collection-banner` → alle categorieën vallen terug op de ingebouwde tekst-header (breadcrumb + titel, donker op licht rgb 250,250,250). **PR #8 + #9** (waterdicht: ook `collection.image`-bron geblokkeerd), maar Shopify weigerde de sync door een ongeldige inline `#`-comment in het `{% liquid %}`-blok → **PR #10** repareert dat (`assign banner_image = ''` zonder comment; inline `#` mag niet in Shopify Liquid, alleen op een eigen regel). Vooraf gesimuleerd + gescreenshot op plafondlampen: schone leesbare header. Nu valide + gesynct naar staging (2026-07-20). Preview → publiceren.
 - [ ] Trustpilot updaten
+- [~] Reviewgrid consistent op alle categoriepagina's (onder producten, boven SEO-tekst). Root cause: per collectie handmatig als custom-liquid geplakt (9 van ~21 hadden het, wisselende plek). Fix: `{% render 'trustpilot-reviews' %}` één keer in de gedeelde `main-collection-product-grid`-sectie + 9 losse kopieën verwijderd. **PR #2 gemerged** (injectie in gedeelde sectie). Daarna **PR #3 gemerged**: reviewgrid stond onder de categorietekst omdat de sectie die tekst zelf rendert (`description_position: below`); nu verplaatst naar direct na de producten en vóór dat tekstblok (producten → reviewgrid → categorietekst). Beide op main + gesynct naar staging (2026-07-20). **Nog te doen:** staging opnieuw previewen (solar-lampen) → publiceren om live te gaan. Zelfde staging-vs-live-situatie als favicon.
 
 ### Contactpagina
 - [ ] Volledige redesign met FAQ zodat er over tijd minder klantvragen komen (niet alleen een contactformulier)
@@ -94,3 +95,13 @@ Levende changelist voor de [[Lichtendirect]] CRO-ronde. Alles wat we gaan aanpas
 
 ## Nog te bespreken
 - [ ] 
+
+## Techniek / SEO (los)
+
+- [~] **Favicon komt niet door in Google** (toont generieke globe). Root cause: favicon werd op 32x32 gerenderd in 8 layout-bestanden. Google eist vierkant + veelvoud van 48px. Fix (32→96) = PR #1 op `lichtendirect-woodstock-theme`, **gemerged naar main** (2026-07-20). Repo is via Shopify GitHub-integratie gekoppeld (shopify[bot] sync-commits). **Maar:** live homepage toont na merge nog steeds 32px → het gekoppelde theme is vrijwel zeker het **staging-theme**, niet het gepubliceerde (de Dunion-changes van 6 jul staan ook op main maar zijn evenmin live). **Nog te doen:** verifiëren welk theme live is; óf de one-liner direct in het live-theme zetten (`theme.liquid` r21, 32→96), óf staging publiceren; daarna Search Console reindex. Bronbestand 1320x1000 (scherp genoeg) maar niet vierkant → los nog vierkant lampje-favicon overwegen.
+
+## Blog / FAQ (Dunion, Jim Zwarthoed)
+
+- [~] **Blogafbeeldingen standaard compacter + scherp** (referentie avv-vloeren.nl). Diagnose: body-afbeeldingen waren al 500px (via width-attribuut), NIET het probleem. De "kapotgroot" op desktop is de **uitgelichte afbeelding bovenaan**, die de leeskolom (`article-template__narrow` = 112rem = 1120px) vult. Fixes: body-img gecapt op 600px (**PR #4**, blijft staan). Hero: CSS-cap (PR #5) liet de foto verdwijnen (botste met de aspect-ratio-box) → **teruggedraaid (PR #6)**. Juiste route voor de hero is de theme-instelling: featured_image block heeft `image_height` (adapt/small/medium/large), staat nu op **adapt** → bijna-vierkante foto wordt reuzegroot vierkant op desktop. Customizer small/medium veranderen alleen de hoogte, niet de breedte → hero bleef full-width. **Werkende fix: PR #7** — aspect-ratio-box platgeslagen (`padding-bottom:0 !important`) + foto als normale afbeelding op max 600px gecentreerd. **Vooraf live in de blogpagina getest** (via JS-injectie): foto blijft zichtbaar op 600x591, geen collapse. Verificatie-truc voor toekomstige blinde visuele fixes: CSS tijdelijk in de live pagina injecteren en meten vóór shippen. Gemerged naar main + staging (2026-07-20). Preview op staging → publiceren.
+- [ ] **FAQ onder de H1** (dev-taak, besproken met Anna). Wacht op context uit Jims eerdere mail: wat is het exacte issue? Nodig voordat de FAQ gevuld kan worden.
+- [ ] Content-checks (voor Talat/Murat, niet dev): 2 nieuwe blogs (hoe-werken-solar-lampen, hoe-lang-gaat-een-solar-lamp-mee) + FAQ-vragen in Word-docs.
