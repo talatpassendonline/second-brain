@@ -7,7 +7,7 @@ tags: [shopify, cro, raamdecoratie, maatwerk, later]
 priority: low
 ---
 
-Mogelijk vervolgproject: CRO/website-audit voor [[Gordijnfestijn]] (gordijnfestijn.nl), in dezelfde stijl als [[Lichtendirect]]. Werk komt **later**, dit is een stub met de eerste bevindingen zodat ze bewaard blijven. Nog niet gestart, nog niet gescoped.
+Clientproject (in pitch) van [[Passendonline]]: groeiplan voor [[Gordijnfestijn]] (gordijnfestijn.nl), gepitcht aan eigenaar Rayan. Het volledige plan staat in [[groeiplan-april-2026]]: 6 lekken, twee bewegingen (merk bouwen + lekken dichten), drie fases, doel 2x online omzet en +50% CVR. De nieuwbouw-site uit fase 1 is beoogde pilot voor de `site-factory` skill.
 
 ## Eerste indruk (mobiel, 2026-07-15)
 
@@ -28,9 +28,10 @@ High-consideration maatwerk + servicebedrijf. "Conversie" is deels een **lead** 
 - Hero-beelden laadden in de preview als grijze vlakken (waarschijnlijk lazy-load, op echt toestel checken).
 
 ## Open vragen voordat we starten
-1. Passendonline-client of eigen store?
-2. Doel: meer directe online bestellingen, of meer afspraken/inmeet-leads? (bepaalt of we configurator of lead-funnel optimaliseren)
+1. ~~Passendonline-client of eigen store?~~ Client: groeiplan gepitcht aan Rayan (zie [[groeiplan-april-2026]]).
+2. ~~Doel?~~ Beide, als één systeem: merk + leads + online orders (twee bewegingen uit het groeiplan).
 3. Toegang tot analytics + Shopify-admin? Genoeg verkeer/omzet om prioriteit te krijgen naast [[Lichtendirect]]?
+4. Status van de deal: heeft Rayan ja gezegd op het plan, en wat is de startdatum van fase 1?
 
 ## Aanpak als het losgaat
 Zelfde als Lichtendirect ([[mobiel-pdp-cro-audit]] → [[pdp-cro-changelist]] → klantvriendelijk plan), maar toegespitst op maatwerk: configurator-UX en leadflow i.p.v. een simpele product-PDP. Eerst cijfers, geen oordeel op gevoel.

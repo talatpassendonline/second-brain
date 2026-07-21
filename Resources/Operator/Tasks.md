@@ -10,12 +10,18 @@ date: 2026-06-17
 
 Rolling backlog for the [[business|Goatly]] Vault Operator. Open loops surfaced from prior dailies, strategy priorities without a `Projects/` home, and housekeeping items that exceed a single run's fix budget land here. One run = one delta; this file persists what didn't fit.
 
-Last run: 2026-06-27T09:00:00Z
+Last run: 2026-07-19T23:09:48Z
 
 > [!info] Scope
 > Sources: `Daily/*.md`, `Context/strategy.md`, and the whole vault for housekeeping. Protected files (any `CLAUDE.md`, `Context/brand.md`, `Context/business.md`, `Context/strategy.md`) cannot be auto-fixed. [[me|Talat]] handles those by hand when ready.
 
+> [!todo] TOP: Sunday-reflectie 2026-07-19 klaar
+> Vijf promotievoorstellen staan in [[Promotion-Queue]] (performance-data nieuw+oud account, relaunch-setup, Primal-swap, CBO-consolidatie, Shopify CLI deploy-route). [[me|Talat]] keurt per blok goed of af, daarna `/promote`.
+
 ## Open Loops
+
+> [!note] Veel 07-02-loops lijken opgelost door de relaunch (19 jul)
+> De 07-18-relaunch raakte meerdere scam-drivers: prijsladder gefixt via Kaching (48/70/74%, P5 echt best value), subscription-cadans uit cart, advertorial herbouwd (Primal-swap). [[me|Talat]] kan de betreffende checkboxes hieronder afvinken zodra hij ze live geverifieerd heeft. Operator laat ze staan tot dat gebeurt.
 
 > [!warning] BLOCKER 2026-07-13: Meta ad account geband (was bij agency [[team|Nova]])
 > [[me|Talat]] meldt: het ad account bij agency Nova is geband. Zijn eigen persoonlijke FB-profiel kan geen BM/profiel meer maken (dus profiel is restricted). Overweegt een BM via zijn vaders account. Advies gegeven: eerst diagnosticeren, niet meteen vaders-account (fragiel + verbrandt vaders profiel bij relink).
@@ -54,13 +60,15 @@ Uit `Daily/2026-07-02.md` (aankoop-stopper audit + PDP-lek):
 Uit `Daily/2026-07-03.md`:
 - [ ] Business verification checken/afronden (grootste factor bij BM-reviews) . source: Daily/2026-07-03.md
 
-Nog niet 48h oud (blijven in de daily): de 3 setup-checkboxes in `Daily/2026-07-05.md` (Help & Contact page aanmaken in Shopify admin, levertijd-claim checken, 17TRACK checken).
+Uit `Daily/2026-07-05.md` (nu 48h+ oud, gesurfaced 2026-07-19):
+- [ ] Shopify admin → Online Store → Pages → Add page ("Help & Contact") → template `contact-goatly` → in footer-menu zetten . source: Daily/2026-07-05.md
+- [ ] Levertijd-claim checken ("2 to 4 working days", editable in customizer bij Order & Shipping sectie) . source: Daily/2026-07-05.md
 
 Uit `Daily/2026-07-06.md` (contactpagina, expliciet geparkeerd door [[me|Talat]] tot de site af is):
 - [ ] 17TRACK Order Number tab werkend krijgen op UK store: app geïnstalleerd maar tab werkt nog niet. Checken: tracking page aan in de 17TRACK app-instellingen, proxy-pad op trygoatly.com (NL = `/apps/17TRACK`, hoofdlettergevoelig), pad zo nodig aanpassen in customizer bij Order tracking sectie, order-sync venster/plan. . source: Daily/2026-07-06.md
 
-> [!warning] Operator-pipeline zelf is een open loop
-> De scheduled task `goatly-vault-operator-daily` vuurt dagelijks (laatste run 5 juli 17:00 UTC) maar heeft sinds 17 juni geen rapport meer geschreven en deze file sinds 27 juni niet meer bijgewerkt. Runs falen stil. [[me|Talat]]: check de run-output van de scheduled task. De oude uitgeschakelde duplicaat-task `vault-operator-daily` kan weg.
+> [!success] Operator-pipeline draaide weer (2026-07-19)
+> Eerste geslaagde operator-run sinds 17 juni: rapport `Resources/Operator/Daily/2026-07-19-daily.md` geschreven, deze file bijgewerkt, Sunday-reflectie uitgevoerd ([[Promotion-Queue]]). Eén geslaagde run bewijst de pipeline nog niet: als de volgende dagen weer stil blijven, check de run-output van de scheduled task en ruim de oude uitgeschakelde duplicaat-task `vault-operator-daily` op.
 
 ## Strategy Gaps
 
@@ -99,4 +107,4 @@ Other lint debt to rotate through future runs:
 - [x] ✅ 2026-06-17: Stripped 5 em-dashes from `Context/me.md` (1 parenthetical + 4 cross-link bullets).
 - [x] ✅ 2026-06-17: Bootstrapped this file. First operator run.
 
-<span style="background-color:#2d5238; color:#f5efe3; padding:2px 8px; border-radius:3px; font-size:0.85em;">🤖 Goatly Vault Operator . last edited: 2026-06-27T09:00:00Z</span>
+<span style="background-color:#2d5238; color:#f5efe3; padding:2px 8px; border-radius:3px; font-size:0.85em;">🤖 Goatly Vault Operator . last edited: 2026-07-19T23:09:48Z</span>

@@ -32,3 +32,11 @@ Context/strategy.md priorities -> Projects -> Weekly Review -> Daily/Tasks.md
 - Priorities live in `Context/strategy.md`; projects in `Projects/` link back to them.
 - Open tasks and loops live in `Resources/Operator/Tasks.md` and today's `Daily/` note.
 - During weekly reviews, check which priorities have no active project (they're drifting).
+
+## Passendonline klantwerk
+
+Voor klantprojecten van Passendonline (Lichtendirect, Gordijnfestijn, FIX-Group, en elke nieuwe klant):
+
+- Elke klantfolder heeft `taken.md` (open taken + "## Mail" voor de Operator) en `uren.md` (regel per werksessie: datum, klus, uren of fee, gefactureerd ja/nee).
+- **Het klantboard draait nu op een Neon-database** (live op https://passendonline-dashboard.vercel.app), niet meer op `clients.ts`. Talat bewerkt tarieven, uren, facturen en bedrijfsgegevens zelf op de app. `uren.md`/`taken.md` in de vault blijven de operator-notitie; de app is een aparte bron. Wil Claude data in de app zetten: via de database (server-actie of admin-route), niet via `clients.ts`. Details en schema in `Projects/Passendonline/README.md`.
+- `uren.md` is de bron voor de maandelijkse factuur-concepten. Uren nooit schatten zonder het te markeren; Talat corrigeert.

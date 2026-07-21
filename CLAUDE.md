@@ -89,6 +89,15 @@ Bij marketing-werk de passende skill laden VOORDAT je begint (niet erna als chec
 
 Voor groter of parallel werk: delegeer aan de gelijknamige agents (`contrast-checker`, `voc-researcher`, `hook-writer`, `economics-auditor`, `avatar-simulator`). Bronnen-doctrine achter de skills: `Resources/research/videos/`.
 
+## Agency Skills (Passendonline)
+
+| Werk | Skill |
+|---|---|
+| Nieuwe klantsite bouwen, "bouw dit na", site-klus voor een klant | `site-factory` (intake eerst, twee review-gates) |
+| Merkfundament voor een klant: deep research, avatar, offer, necessary beliefs | `brand-foundation` (vóór site-factory/ad-factory, één review-gate) |
+| Ad-set voor een klant: angles, statics, video-ads, launch sheet | `ad-factory` (vereist brand-foundation, twee review-gates) |
+| Klanten zoeken, leads onderzoeken, outreach voorbereiden | `prospect-scout` (verstuurt nooit zelf) |
+
 ## Commands
 
 - `/dtc`, adopt de DTC-operator persona uit `Resources/prompts/dtc-operator-persona.md` voor de rest van het gesprek

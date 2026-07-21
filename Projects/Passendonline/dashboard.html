@@ -1,0 +1,341 @@
+<title>Passendonline Klantboard</title>
+<style>
+  :root {
+    --bg: #0E1116;
+    --bg-raise: #141922;
+    --panel: #171D27;
+    --panel-edge: #232B38;
+    --ink: #E9ECF1;
+    --ink-dim: #8A93A3;
+    --ink-faint: #566070;
+    --amber: #F5A623;
+    --amber-deep: #C77F0A;
+    --amber-glow: rgba(245, 166, 35, 0.14);
+    --ok: #4CBF7A;
+    --alarm: #E0604C;
+    --alarm-glow: rgba(224, 96, 76, 0.12);
+    --display: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+    --body: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 500px at 70% -10%, rgba(245,166,35,0.05), transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; opacity: 0.35; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1120px; margin: 0 auto; padding: 22px 18px 60px; }
+
+  header.top {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding-bottom: 18px; border-bottom: 1px solid var(--panel-edge);
+  }
+  .mark {
+    font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    font-size: clamp(1.5rem, 4vw, 2.1rem); letter-spacing: 0.04em; line-height: 1;
+  }
+  .mark em { font-style: normal; color: var(--amber); }
+  .live {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--amber); box-shadow: 0 0 10px var(--amber);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .stamp { margin-left: auto; font-family: var(--mono); font-size: 0.72rem; color: var(--ink-faint); text-align: right; }
+  .stamp b { color: var(--ink-dim); font-weight: 500; }
+
+  .eyebrow {
+    font-family: var(--display); text-transform: uppercase; font-weight: 600;
+    letter-spacing: 0.14em; font-size: 0.82rem; color: var(--amber);
+    display: flex; align-items: center; gap: 10px; margin: 30px 0 12px;
+  }
+  .eyebrow::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--panel-edge), transparent); }
+  .eyebrow .sub { color: var(--ink-faint); letter-spacing: 0.06em; font-size: 0.72rem; }
+
+  ul.now { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  ul.now li {
+    background: var(--panel); border: 1px solid var(--panel-edge); border-left: 3px solid var(--amber);
+    border-radius: 8px; padding: 12px 14px;
+    display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: start;
+    transition: opacity 0.3s, border-color 0.3s;
+  }
+  ul.now li.alarmline { border-left-color: var(--alarm); background: linear-gradient(90deg, var(--alarm-glow), var(--panel) 40%); }
+  ul.now li .task-main { font-weight: 600; font-size: 0.98rem; }
+  ul.now li .task-sub { grid-column: 2; color: var(--ink-dim); font-size: 0.82rem; }
+  .tag {
+    font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.05em;
+    color: var(--ink-dim); border: 1px solid var(--panel-edge); border-radius: 4px;
+    padding: 1px 6px; margin-left: 8px; vertical-align: 2px; white-space: nowrap;
+  }
+  .tag.alarm { color: var(--alarm); border-color: rgba(224,96,76,0.4); }
+  .tag.amber { color: var(--amber); border-color: rgba(245,166,35,0.4); }
+
+  input.chk { position: absolute; opacity: 0; pointer-events: none; }
+  label.box {
+    display: inline-block; width: 20px; height: 20px; margin-top: 2px;
+    border: 2px solid var(--ink-faint); border-radius: 5px; cursor: pointer;
+    position: relative; transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    flex: none;
+  }
+  label.box:hover { border-color: var(--amber); }
+  label.box::after {
+    content: ""; position: absolute; left: 5px; top: 1px; width: 5px; height: 10px;
+    border: solid var(--bg); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg) scale(0);
+    transition: transform 0.15s ease-out;
+  }
+  input.chk:checked + label.box { background: var(--amber); border-color: var(--amber); box-shadow: 0 0 12px var(--amber-glow); }
+  input.chk:checked + label.box::after { transform: rotate(45deg) scale(1); }
+  input.chk:focus-visible + label.box { outline: 2px solid var(--amber); outline-offset: 2px; }
+  li.done-item { opacity: 0.45; }
+  li.done-item .task-main { text-decoration: line-through; text-decoration-color: var(--amber); }
+
+  .meters { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  @media (min-width: 760px) { .meters { grid-template-columns: repeat(4, 1fr); } }
+  .meter {
+    background: var(--bg-raise); border: 1px solid var(--panel-edge); border-radius: 8px;
+    padding: 12px 14px 10px;
+  }
+  .meter .val {
+    font-family: var(--display); font-weight: 700; font-size: 1.9rem; line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .meter .val.amber { color: var(--amber); text-shadow: 0 0 18px var(--amber-glow); }
+  .meter .val.alarm { color: var(--alarm); }
+  .meter .cap { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); margin-top: 5px; }
+
+  .clients { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 960px) { .clients { grid-template-columns: repeat(3, 1fr); } }
+  .client {
+    background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 10px;
+    padding: 16px 16px 12px; display: flex; flex-direction: column; gap: 12px;
+  }
+  .client h2 {
+    margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;
+  }
+  .led { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .led.alarm { background: var(--alarm); box-shadow: 0 0 8px var(--alarm); }
+  .led.amber { background: var(--amber); box-shadow: 0 0 8px var(--amber); }
+  .led.ok { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+  .client .state { font-size: 0.8rem; color: var(--ink-dim); margin-top: -8px; }
+  .client h3 {
+    margin: 2px 0 6px; font-family: var(--mono); font-weight: 500; font-size: 0.66rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint);
+  }
+  ul.mini { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  ul.mini li { display: flex; gap: 9px; align-items: flex-start; font-size: 0.86rem; }
+  ul.mini label.box { width: 16px; height: 16px; border-radius: 4px; margin-top: 1px; }
+  ul.mini label.box::after { left: 4px; top: 0px; width: 4px; height: 8px; }
+  ul.deliv { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+  ul.deliv li { font-size: 0.82rem; color: var(--ink-dim); padding-left: 16px; position: relative; }
+  ul.deliv li::before { content: "▸"; position: absolute; left: 0; color: var(--amber-deep); }
+  a { color: var(--amber); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  .client .foot {
+    margin-top: auto; border-top: 1px dashed var(--panel-edge); padding-top: 9px;
+    display: flex; justify-content: space-between; font-family: var(--mono); font-size: 0.72rem;
+    color: var(--ink-faint); font-variant-numeric: tabular-nums;
+  }
+  .client .foot b { color: var(--ink-dim); font-weight: 500; }
+
+  footer.base {
+    margin-top: 34px; border-top: 1px solid var(--panel-edge); padding-top: 14px;
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+    font-size: 0.78rem; color: var(--ink-faint);
+  }
+  button.share {
+    font-family: var(--display); text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.78rem; font-weight: 600; color: var(--amber);
+    background: transparent; border: 1px solid var(--amber-deep); border-radius: 6px;
+    padding: 7px 14px; cursor: pointer; transition: background 0.2s, transform 0.1s;
+  }
+  button.share:hover { background: var(--amber-glow); }
+  button.share:active { transform: scale(0.97); }
+  button.share:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  #toast {
+    position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px);
+    background: var(--amber); color: #14161A; font-weight: 600; font-size: 0.85rem;
+    padding: 9px 18px; border-radius: 8px; opacity: 0; pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s; z-index: 10;
+  }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  .reveal { animation: rise 0.5s ease-out backwards; }
+  .reveal:nth-of-type(2) { animation-delay: 0.06s; }
+  .reveal:nth-of-type(3) { animation-delay: 0.12s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .live { animation: none; }
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="live" aria-hidden="true"></span>
+    <div class="mark">Passend<em>online</em></div>
+    <div class="stamp"><b>klantboard</b><br>bijgewerkt 21 jul 2026</div>
+  </header>
+
+  <div class="eyebrow">Nu <span class="sub">wacht op jou, alle klanten</span></div>
+  <ul class="now reveal" id="nowlist">
+    <li class="alarmline" data-id="ld-murat">
+      <input class="chk" type="checkbox" id="c1"><label class="box" for="c1" aria-label="afvinken"></label>
+      <span class="task-main">Murat appen: Shopify connector-goedkeuring <span class="tag alarm">33 dagen open</span><span class="tag">Lichtendirect</span></span>
+      <span class="task-sub">Blokkeert de hele changelist en het metafields-blok. Eén appje.</span>
+    </li>
+    <li data-id="fix-review">
+      <input class="chk" type="checkbox" id="c2"><label class="box" for="c2" aria-label="afvinken"></label>
+      <span class="task-main">Preview v3 met fotografie beoordelen <span class="tag amber">&euro; 400 na livegang</span><span class="tag">FIX Group</span></span>
+      <span class="task-sub"><a href="https://fixgroup-website-9tfj9xyid-talat-3342s-projects.vercel.app">Preview openen</a>. Akkoord = agent promoot naar productie.</span>
+    </li>
+    <li data-id="gf-rayan">
+      <input class="chk" type="checkbox" id="c3"><label class="box" for="c3" aria-label="afvinken"></label>
+      <span class="task-main">Rayan: ja of nee op het groeiplan <span class="tag">Gordijnfestijn</span></span>
+      <span class="task-sub">Plus startdatum. Bepaalt of de site-factory-pilot hier draait.</span>
+    </li>
+    <li data-id="fix-materiaal">
+      <input class="chk" type="checkbox" id="c4"><label class="box" for="c4" aria-label="afvinken"></label>
+      <span class="task-main">FIX Group: echte reviews, verhaal en domein opvragen <span class="tag">FIX Group</span></span>
+      <span class="task-sub">Placeholder-reviews gaan niet live. Domein registreert de klant zelf.</span>
+    </li>
+  </ul>
+
+  <div class="eyebrow">Meters</div>
+  <div class="meters reveal">
+    <div class="meter"><div class="val amber">&euro;&nbsp;400</div><div class="cap">te factureren</div></div>
+    <div class="meter"><div class="val">11</div><div class="cap">open taken</div></div>
+    <div class="meter"><div class="val alarm">33</div><div class="cap">dagen grootste blocker</div></div>
+    <div class="meter"><div class="val">3</div><div class="cap">klussen actief</div></div>
+  </div>
+
+  <div class="eyebrow">Klanten</div>
+  <div class="clients reveal">
+
+    <article class="client">
+      <h2><span class="led alarm"></span>Lichtendirect</h2>
+      <div class="state">Geblokkeerd: wacht op connector-goedkeuring van Murat, open sinds 18 juni.</div>
+      <div>
+        <h3>Taken</h3>
+        <ul class="mini">
+          <li><input class="chk" type="checkbox" id="l1" data-id="ld-metafields"><label class="box" for="l1" aria-label="afvinken"></label><span>Metafields-bulkblok in één agent-run zodra toegang er is</span></li>
+          <li><input class="chk" type="checkbox" id="l2" data-id="ld-changelist"><label class="box" for="l2" aria-label="afvinken"></label><span>Changelist bouwen op staging, per wijziging live checken</span></li>
+          <li><input class="chk" type="checkbox" id="l3" data-id="ld-anna"><label class="box" for="l3" aria-label="afvinken"></label><span>Terugkoppeling naar Anna Veerman na livegang</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opgeleverd</h3>
+        <ul class="deliv">
+          <li><a href="https://claude.ai/code/artifact/94da7c6a-6d7c-4848-a885-b4c9f989f477">Verbeterplan</a> gedeeld met Murat, 15 jul</li>
+          <li>Mobiele PDP-audit + metafield-datamodel, 13 jul</li>
+          <li>Header + PDP code klaar voor push</li>
+        </ul>
+      </div>
+      <div class="foot"><span>tarief <b>nog vastleggen</b></span><span>CVR 3,09% · omzet +71%</span></div>
+    </article>
+
+    <article class="client">
+      <h2><span class="led amber"></span>FIX Group</h2>
+      <div class="state">Review-gate 2: preview v3 met fotografie staat klaar voor jouw akkoord.</div>
+      <div>
+        <h3>Taken</h3>
+        <ul class="mini">
+          <li><input class="chk" type="checkbox" id="f1" data-id="fix-promote"><label class="box" for="f1" aria-label="afvinken"></label><span>Promote naar productie na akkoord</span></li>
+          <li><input class="chk" type="checkbox" id="f2" data-id="fix-factuur"><label class="box" for="f2" aria-label="afvinken"></label><span>Factuur &euro; 400 sturen na livegang</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opgeleverd</h3>
+        <ul class="deliv">
+          <li><a href="https://fixgroup-website-9tfj9xyid-talat-3342s-projects.vercel.app">Preview v3</a> met fotografie, 21 jul</li>
+          <li>Taste-pass + volledige restyle, 2 eerdere previews</li>
+          <li>Complete build: huisstijl, logo, over-ons, zakelijk</li>
+        </ul>
+      </div>
+      <div class="foot"><span>fixed fee</span><span><b>&euro; 400</b> na livegang</span></div>
+    </article>
+
+    <article class="client">
+      <h2><span class="led ok"></span>Gordijnfestijn</h2>
+      <div class="state">Pitch loopt: groeiplan ligt bij Rayan, wachten op akkoord.</div>
+      <div>
+        <h3>Taken</h3>
+        <ul class="mini">
+          <li><input class="chk" type="checkbox" id="g1" data-id="gf-pilot"><label class="box" for="g1" aria-label="afvinken"></label><span>Bij ja: nieuwbouw-site fase 1 als site-factory-pilot</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opgeleverd</h3>
+        <ul class="deliv">
+          <li>Groeiplan: 6 lekken, 3 fases, doel 2x omzet, apr 2026</li>
+          <li>Eerste mobiele site-scan, 15 jul</li>
+        </ul>
+      </div>
+      <div class="foot"><span>tarief <b>volgt uit deal</b></span><span>status: pitch</span></div>
+    </article>
+
+  </div>
+
+  <footer class="base">
+    <button class="share" id="sharebtn" type="button">Stuur status naar Claude</button>
+    <span>Afvinken blijft bewaard op dit toestel. De knop kopieert je afgevinkte taken; plak ze in Claude en de vault wordt bijgewerkt.</span>
+  </footer>
+</div>
+<div id="toast" role="status">Gekopieerd. Plak het in Claude.</div>
+
+<script>
+  (function () {
+    var KEY = "po-board-v1";
+    var state = {};
+    try { state = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { state = {}; }
+
+    var boxes = document.querySelectorAll("input.chk");
+    boxes.forEach(function (box) {
+      var id = box.dataset.id || (box.closest("[data-id]") && box.closest("[data-id]").dataset.id);
+      if (!id) return;
+      if (state[id]) { box.checked = true; mark(box, true); }
+      box.addEventListener("change", function () {
+        state[id] = box.checked;
+        if (!box.checked) delete state[id];
+        try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+        mark(box, box.checked);
+      });
+    });
+
+    function mark(box, done) {
+      var li = box.closest("li");
+      if (li) li.classList.toggle("done-item", done);
+    }
+
+    document.getElementById("sharebtn").addEventListener("click", function () {
+      var done = [];
+      document.querySelectorAll("input.chk:checked").forEach(function (box) {
+        var li = box.closest("li");
+        var label = li ? li.textContent.replace(/\s+/g, " ").trim() : "";
+        if (label) done.push("- " + label);
+      });
+      var msg = done.length
+        ? "Afgevinkt op het klantboard:\n" + done.join("\n") + "\nWerk de vault bij en ververs het board."
+        : "Niks afgevinkt op het klantboard, alles staat nog open.";
+      navigator.clipboard.writeText(msg).then(showToast, showToast);
+    });
+
+    function showToast() {
+      var t = document.getElementById("toast");
+      t.classList.add("show");
+      setTimeout(function () { t.classList.remove("show"); }, 2600);
+    }
+  })();
+</script>
