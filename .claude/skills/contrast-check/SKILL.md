@@ -25,3 +25,7 @@ Doctrine uit [[mark-buildbrands-8-years-marketing-advice-transcript]] (Resources
 ## Output
 
 Kort verdict per punt (1-6), met per fail een concrete tegenovergestelde uitvoering ("iedereen doet X, dus wij doen Y"). Geen compliance-oordelen; feiten en bron leveren, [[me|Talat]] beslist.
+
+## Bronnen: ecom-brand course canon
+
+De 5 sophistication-stages en de 3 strategische antwoorden erop (new mechanism, new information, new identity, elk reset de markt van stage 4/5 terug naar 1) staan volledig in [[03-avatar-desire-market-sophistication]], met Schwartz letterlijk geverifieerd in [[12-marketing-classics-frameworks]]. Waarom big-brand-ads klonen faalt, plus de Spider Web-methode en white-space-analyse, staan in [[04-creative-execution-and-ad-learnings]]. De purple-ocean-logica sluit aan op het mass-desire-principe uit [[03-avatar-desire-market-sophistication]].

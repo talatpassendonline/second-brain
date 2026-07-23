@@ -12,7 +12,7 @@ Takenlijst voor [[FIX Group]]. De dagelijkse Operator voegt hier klantmail-taken
 
 - [x] Review-gate 2 gepasseerd; v8 staat op productie: https://fixgroup-website.vercel.app (deelbaar met de klant).
 - [ ] Bij de klant checken: kloppen de 4 beveiligings-diensten (evenementen, horeca/portiers, object, verkeersregelaars)? Ingevuld op basis van "beveiliging op evenementen enzo". (Talat)
-- [ ] 3 foto's genereren via [[foto-queue]] (beveiliging.jpg, onderweg.jpg, klant.jpg), dan build + deploy v7. **Geblokkeerd: Higgsfield down.** 21 jul een retry-loop gedraaid (10 rondes, ~04:00–07:30), `balance` gaf elke keer `net::ERR_FAILED`. Service bleef de hele nacht dood; loop op verzoek gestopt. Mogelijk ook een afgebroken MCP-verbinding: eerst de Higgsfield-connector opnieuw koppelen, dan `balance` testen, en pas draaien als die antwoordt. (agent)
+- [x] Foto-queue opgelost via omweg (22 jul): Talat/klant genereerde de beelden zelf met de aangeleverde prompts; onderweg.jpg, klant.jpg, beveiliging.jpg + beveiliging-entree.jpg staan live, alle tijdelijke placeholders vervangen.
 - [ ] Vóór livegang: echt adres + KVK-nummer op de contactpagina (staat nu Voorbeeldstraat 1 + KVK 12345678) en echt e-mailadres (info@fixgroup.nl aanname). (Talat vraagt op)
 - [x] Site (fixgroup-website.vercel.app) naar de klant gestuurd (21 jul).
 - [x] Reviews, oprichtingsverhaal en domein opgevraagd bij de klant (21 jul); nu wachten op aanlevering.

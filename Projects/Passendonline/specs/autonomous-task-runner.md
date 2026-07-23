@@ -75,5 +75,18 @@ De eerder in de chat geplakte GitHub PAT is voor deze aanpak niet nodig; intrekk
 - ~~Mini owner-fix in de dashboard-app~~ **gedaan** op branch `feat/api-owner-filter` in `~/passendonline-dashboard` (`?owner=agent`-filter + `openDetailed`). Nog niet gedeployed: merge naar main + `vercel --prod` wanneer Talat wil.
 - ~~Cloud-routine bouwen~~ **gedaan** als GitHub Actions PR #18 (propose-modus, gescoped op Lichtendirect).
 - Na een paar goede propose-runs: promoveren naar act (agent merget naar staging + vinkt af via de API). Publiceren blijft altijd handmatig.
-- AUTO-OK backlog in de brief laten groeien naarmate het vertrouwen groeit.
+- ~~AUTO-OK backlog laten groeien~~ vervangen door de **akkoord-flow** (21 jul avond): taken hebben een `akkoord`-veld (leeg/wacht/ja), spec-taken komen op "wacht" binnen, Talat tikt "Akkoord geven" op de klanten-pagina (mobiel), en de brief verbiedt bouwen zolang akkoord != ja. Vier grove taken opgeknipt in specs in `.agent/tasks/`: usp-trust-strip, sticky-atc-mobiel, gerelateerde-carousel-opschonen, footer-trust; als wacht-taken in het dashboard gezet. Dashboard toont ook een **agent-statuskaart** (bezig met welke taak / slaapt, gevoed door workflow-meldingen naar `agent_status`).
 - Multi-klant later: per klant-repo een eigen ship-loop-workflow.
+
+## Review-agent in de ship-loop (22 jul)
+
+Op Talat's vraag (na de halve-breedte-Afrekenen-knop: bouwer haalde een knop weg maar herstelde het grid niet). Elke ship-loop-run heeft nu een **tweede Claude-stap**: de reviewer krijgt `BASE_SHA`, diff't de commits van die run, controleert belofte-vs-diff, of de omgeving is afgemaakt, verboden terrein en Liquid-syntax. Klein gebrek → `review-fix:`-commit; ernstig → revert. Oordeel in werklog (source "review") en op de statuskaart. Gate-stap slaat de reviewer over als de bouwer niks mergde (idle runs blijven goedkoop). Brief van de bouwer kreeg ook de regel "maak af wat je aanraakt". Cart-fix zelf (Afrekenen volle breedte) staat op staging.
+
+## Tweede agent: prospect-loop (22 jul)
+
+Op Talat's vraag ("agent die bedrijven scopet en klant probeert te maken") de [[prospect-scout]]-methode naar de cloud getild, zelfde patroon als de ship-loop:
+
+- **Repo `talatpassendonline/passendonline-prospect-loop`**: dagelijkse cron (~08:11 NL), `anthropics/claude-code-action@v1`, brief in `.agent/prospect-brief.md` (sweep → dossier → fit-oordeel → outreach-concept, max 5 leads/run, dedupe via de leads-API, wisselt per run van branche/regio).
+- **Dashboard**: `leads`-tabel + `/api/admin/leads` (GET dedupe, POST, DELETE) + **Leads-pagina** met fit-badges, dossier, uitklapbaar concept-bericht en status-pijplijn (nieuw → benaderd → reactie → deal → afgewezen). In sidebar + mobiele nav.
+- **Harde grens in de brief:** agent neemt NOOIT contact op (geen mail, geen formulieren, geen DM); alleen publieke info + dossiers. Talat verstuurt zelf.
+- **Nog inert:** wacht op 2 repo-secrets (`CLAUDE_CODE_OAUTH_TOKEN` + `APP_PASSWORD`) die Talat vanavond zet via `gh secret set` op de nieuwe repo.

@@ -27,3 +27,7 @@ Doctrine uit [[mark-buildbrands-8-years-marketing-advice-transcript]]: 90% van j
 ## Format-huisregels Goatly
 
 Geen bold/italics in body, 👉 + volledige advertorial-URL, plain protagonist-attributie, max 3 P.S.-en, geen provincienamen, geen em-dashes.
+
+## Bronnen: ecom-brand course canon
+
+Naast Mark en Chris Haddad: de hook-frameworks in [[02-copywriting-program]] (2 types, 2 manieren, open loops via juxtapositie, fear of het tegenovergestelde, plus bridges), "Hooks That BANG" en de visualize/falsify/kan-niemand-anders-dit-zeggen-test uit [[04-creative-execution-and-ad-learnings]], de Big 4 Emotions (NEW of ONLY, EASY, SAFE, BIG of FAST) en de awareness-per-lead-type copy-matrix in [[11-ai-prompt-library]], en de Cashvertising-koppenformules plus de Life-Force 8 in [[12-marketing-classics-frameworks]].

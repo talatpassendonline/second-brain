@@ -24,3 +24,7 @@ Doctrine uit [[mark-buildbrands-8-years-marketing-advice-transcript]]: metrics z
 ## Output
 
 Verdict per laag, één benoemde hoofdconstraint (niet drie), en de concrete volgende test. Cijfers altijd Shopify-gereconcilieerd met de bron erbij. Advies is advies; kill/keep is [[me|Talat]]'s call.
+
+## Bronnen: ecom-brand course canon
+
+De harde formules onder de drie lagen staan in [[07-ecommerce-finance-and-supply-chain]]: contribution margin (de 5 variabele kosten), het LTV-cohortmodel, de 4 barometers (ROAS, take rate, COGS onder 30%, de AOV-drempel als niet-fixbare killer) en de cash conversion cycle. De scaling-math (break-even ROAS + 1 als target, de 3x-CPA-kill, de blended en MER-ladder) komt uit [[05-media-buying-and-testing]]. Voor offer- en AOV-hefbomen: [[offer-architect]].

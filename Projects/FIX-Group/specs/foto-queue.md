@@ -2,9 +2,11 @@
 type: spec
 date: 2026-07-21
 project: FIX-Group
-status: open
+status: completed
 tags: [site-factory, images, higgsfield]
 ---
+
+AFGEROND 2026-07-22: Talat/klant genereerde de beelden zelf met deze prompts (Higgsfield bleef in de sessie onbereikbaar); verwerkt en live. Origineel:
 
 Wachtrij voor de 3 ontbrekende [[FIX Group]]-beelden. De site-code verwacht deze exacte bestandsnamen in `~/fix-group/public/images/`. Genereer met Higgsfield `gpt_image_2`, aspect_ratio 16:9, resolution 2k, quality high (7 credits per stuk), daarna: `sips -Z 1920 -s format jpeg -s formatOptions 82 <in>.png --out <naam>.jpg`, png weggooien, `cd ~/fix-group && npm run build && git add -A && git commit && vercel deploy`, preview-URL in [[taken]] en het dashboard zetten.
 

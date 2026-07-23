@@ -65,6 +65,10 @@ Talat beheert nu alles op de site zelf, opgeslagen in Neon:
 
 Server-acties in `src/app/actions.ts`. Taken/facturen in de DB bijwerken vanuit een sessie kan via `GET /api/admin/tasks?key=<APP_PASSWORD>&complete=<label|label>` (afvinken op tekst-match).
 
+## Aanbod
+
+- [[aanbod-site-abonnement|Site-abonnement €50/mnd]] (`specs/aanbod-site-abonnement.md`): het instap-pakket dat broertje verkoopt (prospect-loop → dossier-PDF → outreach → site-factory → ship-loop). Split-varianten en contract-voorwaarden staan erin; Talat kiest de split. Retainer-laag (à la [[Gordijnfestijn]]) blijft de bovenverdieping.
+
 ## Concurrentie-onderzoek
 
 - [[sparsi-teardown|Sparsi teardown]] (`research/sparsi-teardown.md`): deep-research van sparsi.nl, het website-als-abonnement (€30/mnd, €0 setup) dat zwaar op Meta adverteert. Bevat hun bouw-recept, de scheuren tussen marketing en fine print (12-mnd lock-in vermomd als "opzegbaar"), en een kopiëren/vermijden/differentiëren-lijst. Kern: kopieer hun verpakking, versla ze op CRO/SEO/proof/snelheid.

@@ -25,3 +25,7 @@ Synthetisch vervangt nooit echt. Output van deze skill is hypothese-generatie, g
 ## Output
 
 Gespreksinzichten gestructureerd terugschrijven: nieuwe objections, taalvondsten en angle-signalen naar de kennisbank (Goatly) of `Resources/research/` (overig), met de markering synthetisch erbij. Hook-waardige zinnen doorzetten naar de `hook-punch`-bank.
+
+## Bronnen: ecom-brand course canon
+
+Bouw de avatar-kaart op de Core 5 (Desires, Experiences, Emotions, Behaviors, Demographics, desire-first en demographics-last) en de core-versus-sub-avatar-methode uit [[03-avatar-desire-market-sophistication]]; daar staan ook de 5 awareness-niveaus, de 6 emotional blockers en het What-Women-Want-model dat direct op de vrouwen-50+ ICP van [[business|Goatly]] slaat. De research die je de avatar voedt komt uit [[10-research-system-and-product-research]] en de prompts in `Resources/research/courses/ecom-brand/_prompts/` (target-avatar-profile, avatar-deep-dive).

@@ -31,3 +31,7 @@ Doctrine uit [[mark-buildbrands-8-years-marketing-advice-transcript]]: 80% van c
 ## Output
 
 Schrijf resultaat naar de kennisbank (`/Users/talat/Desktop/Goatly_kennis/` onder de passende map) bij Goatly-werk, anders naar `Resources/research/`. Structuur: quotes per awareness-stage, hook-kandidaten apart, emotionele grondtoon, delta-boog per angle, keystone limiting belief(s) met shift-informatie en zelf-checkbaar bewijs. Altijd bron per quote zodat [[me|Talat]] kan verifiëren.
+
+## Bronnen: ecom-brand course canon
+
+De platform-voor-platform VOC-sweep (Reddit, Amazon, YouTube, FB Ad Library, Kalodata, ad-comments, klant-telefoongesprekken) en de similar/alternative product research staan volledig uitgewerkt in [[10-research-system-and-product-research]]. De awareness- en sophistication-theorie waarmee je quotes classificeert komt uit [[03-avatar-desire-market-sophistication]]. Kant-en-klare research-prompts staan in `Resources/research/courses/ecom-brand/_prompts/` (avatar-deep-dive, mass-desire-research, market-research, target-avatar-profile, root-cause-solution-mechanism).

@@ -18,3 +18,4 @@ Urenlog voor [[FIX Group]]. Fixed fee: EUR 400 (vriendenprijs), factureren na li
 | 2026-07-21 | Sectie-foto's overal ingebouwd, spoed+werkgebied gerestyled, mobiel-menu-fix (preview v7; 3 echte foto's volgen via foto-queue) | in fixed fee | nee |
 | 2026-07-21 | Teamfoto's op alle 30+ dienstpagina's + divisie/zakelijk-hero's, mobiel zichtbaar (preview v8) | in fixed fee | nee |
 | 2026-07-21 | v8 naar productie (publieke URL voor klant) + SEO-audit: OG-tags, metadataBase, tijdelijk noindex, launch-checklist | in fixed fee | nee |
+| 2026-07-22 | Klant-foto's verwerkt (onderweg, klant, 2x beveiliging incl. extra beeld op divisiepagina), live gepusht | in fixed fee | nee |

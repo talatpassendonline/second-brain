@@ -97,6 +97,7 @@ Voor groter of parallel werk: delegeer aan de gelijknamige agents (`contrast-che
 | Merkfundament voor een klant: deep research, avatar, offer, necessary beliefs | `brand-foundation` (vóór site-factory/ad-factory, één review-gate) |
 | Ad-set voor een klant: angles, statics, video-ads, launch sheet | `ad-factory` (vereist brand-foundation, twee review-gates) |
 | Klanten zoeken, leads onderzoeken, outreach voorbereiden | `prospect-scout` (verstuurt nooit zelf) |
+| Sales-dossier of pitch onderbouwen met geverifieerde cijfers | `sales-dossier` (rekenmodel in bandbreedtes, zwarte lijst) |
 
 ## Commands
 
