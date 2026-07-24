@@ -82,6 +82,14 @@ De eerder in de chat geplakte GitHub PAT is voor deze aanpak niet nodig; intrekk
 
 Op Talat's vraag (na de halve-breedte-Afrekenen-knop: bouwer haalde een knop weg maar herstelde het grid niet). Elke ship-loop-run heeft nu een **tweede Claude-stap**: de reviewer krijgt `BASE_SHA`, diff't de commits van die run, controleert belofte-vs-diff, of de omgeving is afgemaakt, verboden terrein en Liquid-syntax. Klein gebrek → `review-fix:`-commit; ernstig → revert. Oordeel in werklog (source "review") en op de statuskaart. Gate-stap slaat de reviewer over als de bouwer niks mergde (idle runs blijven goedkoop). Brief van de bouwer kreeg ook de regel "maak af wat je aanraakt". Cart-fix zelf (Afrekenen volle breedte) staat op staging.
 
+## Slimmer-ronde (23 jul)
+
+Na herhaalde kwaliteits-missers (sticky-balk over hele PDP, theme-eigen sticky-cart niet echt uit): bouwer + reviewer naar **Opus**, `.agent/lessen.md` als verplicht geheugen (reviewer voegt lessen toe bij nieuwe missers), screenshots wachten nog op `STAGING_THEME_ID` van Talat.
+
+## Derde agent: competitor-loop (23 jul)
+
+Repo `passendonline-competitor-loop`, dagelijks ~07:41 NL. Scrapet publieke pagina's van NL-verlichtingsconcurrenten (`.agent/competitors.txt`), snapshots in git (diff = verander-detectie), vertaalt naar max 2 kleine test-ideeën per run als dashboard-taken met **akkoord "wacht"** → Talat keurt → ship-loop bouwt. Nooit contact, geen prijs-adviezen. Inert tot 2 secrets gezet zijn.
+
 ## Tweede agent: prospect-loop (22 jul)
 
 Op Talat's vraag ("agent die bedrijven scopet en klant probeert te maken") de [[prospect-scout]]-methode naar de cloud getild, zelfde patroon als de ship-loop:
